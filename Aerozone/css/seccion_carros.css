@@ -1,0 +1,1209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e2e2;
+}
+/* header */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #1B2549;
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+.inicio_sesion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    min-width: 150px;
+}
+
+.inicio_sesion #inicio,
+.inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+}
+
+.inicio_sesion #inicio img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.3rem;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    min-width: 120px;
+}
+
+.redes img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.redes .x {
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+
+.menu {
+    display: flex;
+    width: 90%;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+   
+}
+
+.menu a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    width: 250px;
+    height: 80PX;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #ffffff;
+    border-right: none;
+    background-color: transparent;
+    transition: 1s;
+
+}
+.menu .nosotros{
+    border-right: solid 5px;
+
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+
+.mostrar-menu {
+    order: 1;
+
+}
+.menu a:hover{
+    background-color: #009062;
+
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: #fbfbfb;
+    text-decoration: underline;
+
+
+}
+
+#check {
+    display: none;
+}
+
+/* contenedor de la pagina */
+.contenedor_principal {
+      /* Reduce el brillo al 50% */
+    display: flex;
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-seccion-carrps.jpg');
+    background-size: cover;
+    background-image: radial-gradient(20);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.menu_mayor {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu1 {
+    display: flex;
+    align-items: center;
+    width: 69.9vw;
+
+    height: 7vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    padding: 1px;
+    border: 2px black solid;
+    background-color: #d9d9d9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    width: 33vw;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 1.3vw;
+
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+}
+
+.items img {
+    width: 1.7vw;
+    height: 4vh;
+}
+
+.items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+}
+
+.items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+}
+
+.items:not(hover) {
+    transition: 1s;
+}
+
+#busqueda {
+    display: flex;
+    background: #f6eeee;
+    align-items: center;
+    width: 70vw;
+    height: 20vh;
+    justify-content: space-evenly;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.lugar_recogida {
+    display: flex;
+    width: 14vw;
+    height: 9vh;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #000000;
+    border-radius: 5px;
+
+}
+
+.lugar_recogida img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.lugar_recogida input {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    height: 8vh;
+
+}
+
+.fecha_recogida {
+    display: flex;
+    width: 14vw;
+    background-color: transparent;
+    height: 9vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 9vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.time input {
+    display: flex;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+
+    height: 8vh;
+    width: 5vw;
+    align-items: center;
+}
+
+.fecha_entrega {
+    display: flex;
+    width: 14vw;
+    background-color: transparent;
+    height: 9vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 7vw;
+    height: 9.2vh;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buscar:hover {
+    background: #009062;
+}
+
+
+
+/* esta es la sesion de los vehiculos*/
+
+
+
+.titulo_sesion_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #0d1b4c;
+    font-weight: bold;
+    margin-top: 4.1rem;
+    margin-bottom: 4.1rem;
+
+
+}
+
+
+.sesion3_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4.1rem; 
+
+}
+
+.sesion_3 {
+
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 54vh;
+    justify-content: space-evenly;
+
+}
+
+
+
+.carro {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 23vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+
+
+}
+
+.carro_img img {
+    width: 100%;
+    display: block;
+}
+
+.carro_contenido {
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+.pamplona_korant {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #0d1b4c;
+    font-size: 16px;
+
+}
+
+.precios_decripcion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.precio_desde {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0;
+    color: #000;
+}
+
+.por-dia {
+    gap: 12px;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+#precio_btn {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end
+}
+
+.btn_ver_mas {
+    background-color: #0d1b4c;
+    color: white;
+    width: 5vw;
+    height: 4.8vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.btn_ver_mas:hover {
+    background-color: #1a2b6d;
+}
+
+    .sesion_4 {
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        height: 54vh;
+        justify-content: space-evenly;
+        margin-bottom: 4.1rem;
+
+
+    }
+
+
+
+    /* sesion 5 la de descubre nuestra flota de vehiculos en 3d */
+.sesion5 {
+    width: 100%;
+    gap: 2rem;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #110006;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sesion6_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sesion6 {
+    margin-top: 4.1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+.sesion6 h1{
+    font-size: 2.5rem;
+    color: #131313;
+    font-weight: bold;
+   
+}
+.sesion6 p{
+    font-size: 1.2rem;
+     margin-bottom: 2.1rem;
+}
+.center_contenedor_servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+}
+
+.contendor_01_02_03 {
+    display: flex;
+    width: 90vw;
+    margin-bottom: 2.1rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contendor_01_02_03 img {
+    width: 23vw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.contendor_01_02_03 h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.contendor_01_02_03 p {
+    font-size: 1.2rem;
+    color: #000000;
+
+
+}
+
+.fila_servicios_sesion6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* la sesion del pie de pagina */
+a{
+  text-decoration: none;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 50vh;
+    margin-top: 3rem;
+
+}
+
+footer a{
+    color: #b6b6b6;
+}
+
+.imgFooter img{
+    width: 2vw;
+   
+}
+
+.imgFooter{
+    display: flex;
+     gap:1rem;
+}
+.imgFooter img:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease-in-out;
+}
+
+.infoFooter{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+
+
+
+/* animacione */
+
+.redes img:hover {
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+
+.redes img:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.flotante {
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+
+    /* header */
+
+    .contenedor_principal {
+        height: 70vh;
+    }
+
+
+
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .inicio_sesion {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        margin-left: 30%;
+        justify-content: space-around;
+        width: 40vw;
+        min-width: 150px;
+    }
+
+    .inicio_sesion #inicio,
+    .inicio_sesion #unirse {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffff;
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+    }
+
+    .inicio_sesion #inicio img {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: 0.3rem;
+    }
+
+    .redes {
+        display: none;
+
+    }
+
+    .redes img {
+        display: none;
+
+    }
+
+    .redes .x {
+        display: none;
+
+    }
+
+
+    /* menu de hamburguesa */
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 26%;
+        height: 100vh;
+        background-color: #1B2549;
+        right: -100%;
+        flex-direction: column;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 1000;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+
+        display: flex;
+        border: none;
+        align-items: center;
+        background: none;
+        color: aliceblue;
+    }
+
+    .mostrar-menu {
+        color: aliceblue;
+        position: absolute;
+        z-index: 1000;
+        top: 56px;
+        position: fixed;
+        right: 50px;
+    }
+
+    .esconder-menu {
+        z-index: 1000;
+        color: aliceblue;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    #check:checked~.menu {
+
+        right: 0;
+    }
+}
+
+
+
+/* responsive del menu de reservas de autos */
+@media(max-width:768px){
+    .menu_mayor{
+        top: 70%;
+ 
+    }
+   
+.menu1 {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+
+    height: 7vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    justify-content: center;
+    padding: 1px;
+    border: 2px black solid;
+    background-color: #d9d9d9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 2.2vw;
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+}
+
+.items img {
+    width: 3.5vw;
+    height: 4vh;
+}
+
+.items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+}
+
+.items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+}
+
+.items:not(hover) {
+    transition: 1s;
+}
+
+#busqueda {
+    display: flex;
+    background: #f6eeee;
+    align-items: center;
+    width: 90vw;
+    height: 15vh;
+    justify-content: space-evenly;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.lugar_recogida {
+    display: flex;
+    width: 14vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #000000;
+    border-radius: 5px;
+
+}
+
+.lugar_recogida img {
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.lugar_recogida input {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    width: 10vw;
+    height: 6vh;
+
+}
+
+.fecha_recogida {
+    display: flex;
+    width: 14vw;
+    background-color: transparent;
+    height: 6vh;
+    font-size: 10px;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.time input {
+    display: flex;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+
+    height: 6vh;
+    width: 6vw;
+    align-items: center;
+}
+
+.fecha_entrega {
+    display: flex;
+    width: 14vw;
+    background-color: transparent;
+    height: 6vh;
+    font-size: 10PX;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 9vw;
+    height: 6vh;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buscar:hover {
+    background: #009062;
+}
+
+
+}
+
+@media(max-width:768px){
+    
+/* esta es la sesion de los vehiculos*/
+
+
+
+.titulo_sesion_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #0d1b4c;
+    font-weight: bold;
+    margin-top: 2.1rem;
+    margin-bottom: 2.1rem;
+
+
+}
+
+
+.sesion3_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2.1rem; 
+
+}
+
+.sesion_3 {
+
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 40vh;
+    justify-content: space-evenly;
+
+}
+
+.carro {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 23vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+
+
+}
+
+.carro_img img {
+    width: 100%;
+    display: block;
+}
+
+.carro_contenido {
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+.pamplona_korant {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #0d1b4c;
+    font-size: 16px;
+
+}
+
+.precios_decripcion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.precio_desde {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.precio {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 0;
+    color: #000;
+}
+
+.precio_pordia {
+    gap: 14px;  
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+#precio_btn {
+    padding-left: 18px;
+    padding-right: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end
+}
+
+.btn_ver_mas {
+    background-color: #0d1b4c;
+    color: white;
+    text-align: center;
+    width: 9vw;
+    height: 4vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+    font-size: 12px;
+
+}
+
+.btn_ver_mas:hover {
+    background-color: #1a2b6d;
+}
+
+.sesion_4 {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 40vh;
+    justify-content: space-evenly;
+
+
+
+}
+
+}
+/* termina el responsive de la sesion 3 y 4 */
+
+
+/* comienza el responsive de la sesion 5 */
+
+@media(max-width:768px){
+
+    /* sesion 5 la de descubre nuestra flota de vehiculos en 3d */
+.sesion5 {
+    width: 100%;
+    gap: 2rem;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #110006;
+    align-items: center;
+    flex-direction: column;
+}
+.sesion5 h1{
+    font-size: 140%;
+}
+.sesion5 p{
+font-size:85%;
+}
+
+}
+/* termina el responsive de la sesion 5
+ */
+
+
+ /* y comienza el responsive de la sesion 6 */
+@media(max-width:768px){
+
+.sesion6_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sesion6 {
+    margin-top: 2.1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+.sesion6 h1{
+    font-size: 2rem;
+    text-align: center;
+    color: #131313;
+    font-weight: bold;
+   
+}
+.sesion6 p{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.center_contenedor_servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+}
+
+.contendor_01_02_03 {
+    display: flex;
+    width: 90vw;
+    margin-bottom:0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contendor_01_02_03 img {
+    width: 23vw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.contendor_01_02_03 h1 {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.contendor_01_02_03 p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.fila_servicios_sesion6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+}
+
+
+
+/* PIE DE PAGINA */
+@media(max-width: 768px){
+  
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  
+  background-color: #1b2549;
+  color: #b6b6b6;
+  height: 40vh;
+
+}
+
+footer a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+
+.imgFooter img {
+  width: 2vw;
+
+}
+
+.imgFooter {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoFooter {
+  height: 40vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.3vw;
+}
+
+
+
+
+}

@@ -1,0 +1,1066 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+
+
+/* header */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #1B2549;
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.inicio_sesion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    min-width: 150px;
+}
+
+.inicio_sesion #inicio,
+.inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+}
+
+.inicio_sesion #inicio img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.3rem;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    min-width: 120px;
+}
+
+.redes img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.redes .x {
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+
+.menu {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}
+
+.menu a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1B2549;
+    width: 200px;
+    height: 50PX;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #1B2549;
+    background-color: aliceblue;
+    transition: 3s;
+
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+
+.mostrar-menu {
+    order: 1;
+
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: #6cc091;
+    text-decoration: underline;
+
+
+}
+
+#check {
+    display: none;
+}
+
+/* contenedor de la pagina */
+.contenedor_principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.contenedor-info-vuelo {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.titulo-sesion1 {
+
+    display: flex;
+    margin-top: 12%;
+    padding: 0 90px;
+    gap: 10px;
+}
+
+.titulo-sesion1 h1 {
+    font-size: 30px;
+}
+
+.titulo-sesion1 img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.menu-vuelos {
+    display: flex;
+    gap: 8px;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@keyframes float {
+    0% {
+        transform: translatex(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.flecha {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* le damos diseños a los vuelos  */
+.menu-vuelos .vuelos {
+    display: flex;
+    width: 15vw;
+    text-decoration: none;
+    border: solid rgb(62, 62, 62) 3px;
+    border-bottom: none;
+    color: #1B2549;
+    text-align: center;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+
+    height: 10vh;
+
+}
+
+.menu-vuelos .vuelo1 {
+    display: flex;
+    width: 15vw;
+    text-decoration: none;
+    border: solid rgb(62, 62, 62) 3px;
+    border-bottom: none;
+    color: #1B2549;
+    text-align: center;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+
+    height: 10vh;
+
+}
+
+
+/* texto de los vuelos y dias disponibles */
+.menu-vuelos .vuelos h1,
+.vuelo1 h1 {
+    font-size: 1.5vw;
+}
+
+
+.menu-vuelos .vuelos p,
+.vuelo1 p {
+    font-size: 1vw;
+}
+
+
+.menu-vuelos .vuelos:hover,
+.vuelo1:hover {
+    height: 17vh;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid #1B2549;
+}
+
+.vuelos-predeterminados {
+    display: flex;
+    width: 100%;
+}
+
+.filtro-vuelo {
+    display: flex;
+    gap: 20px;
+}
+
+.filtro-vuelo h1 {
+    padding: 0 90px;
+    padding-right: 0;
+    font-size: 30px;
+
+}
+
+.btn-mejor-precio {
+    display: flex;
+    background-color: #1B2549;
+    width: 13vw;
+    height: 6vh;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+.btn-max {
+    display: flex;
+    width: 1vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100%;
+    height: 2vh;
+    border: solid 2px;
+
+
+}
+
+.btn-vuelo-directo {
+    display: flex;
+    background-color: #1B2549;
+    width: 13vw;
+    height: 6vh;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+.btn-max {
+    display: flex;
+    width: 1vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100%;
+    height: 2vh;
+    border: solid 2px;
+
+
+}
+
+.btn-vuelo-directo:hover {
+    background-color: #243265;
+}
+
+.btn-mejor-precio:hover {
+    background-color: #243265;
+}
+
+
+
+/* diseño de los vuelos predeterminados */
+.contenedor-vuelos-predeterminados {
+
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    gap: 4.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.1rem;
+
+}
+
+.prede1 {
+    display: flex;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.contenedor-blanco {
+    display: flex;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    width: 64vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    height: 23vh;
+
+
+}
+
+.contenedor-blanco img {
+    margin-top: 35px;
+    width: 40px;
+    transform: rotate(90deg);
+    height: 40px;
+
+}
+
+.hora-salida {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    gap: 15px;
+
+
+
+}
+
+.avion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenedor-gris {
+    display: flex;
+    width: 25vw;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #E3E3E3;
+    height: 23vh;
+}
+
+.btn-mejor-precio2,
+.btn-mejor-precio1,
+.btn-mejor-precio3,
+.btn-mejor-precio4,
+.btn-mejor-precio5 {
+    display: flex;
+    background-color: #1B2549;
+    width: 13vw;
+    height: 6vh;
+    color: white;
+    margin-left: 48%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    top: 0;
+    text-decoration: none;
+    border-radius: 0;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+
+.info-cop {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    gap: 20px;
+
+
+}
+
+.precio {
+    display: flex;
+    padding-bottom: 2.1rem;
+
+}
+
+.precio p {
+    text-align: end;
+}
+
+
+
+
+
+/* pie de pagina */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 50vh;
+    margin-top: 4.2rem;
+
+}
+
+footer a {
+    color: #b6b6b6;
+}
+
+.imgFooter img {
+    width: 2vw;
+
+}
+
+.imgFooter {
+    display: flex;
+    gap: 1rem;
+}
+
+.infoFooter {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive del menu  */
+@media(max-width: 768px) {
+
+    /* header */
+
+
+
+
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .inicio_sesion {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        margin-left: 30%;
+        justify-content: space-around;
+        width: 40vw;
+        min-width: 150px;
+    }
+
+    .inicio_sesion #inicio,
+    .inicio_sesion #unirse {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffff;
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+    }
+
+    .inicio_sesion #inicio img {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: 0.3rem;
+    }
+
+    .redes {
+        display: none;
+
+    }
+
+    .redes img {
+        display: none;
+
+    }
+
+    .redes .x {
+        display: none;
+
+    }
+
+
+    /* menu de hamburguesa */
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 26%;
+        height: 100vh;
+        background-color: #1B2549;
+        right: -100%;
+        flex-direction: column;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 1000;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+
+        display: flex;
+        border: none;
+        align-items: center;
+        background: none;
+        color: aliceblue;
+    }
+
+    .mostrar-menu {
+        color: aliceblue;
+        position: absolute;
+        z-index: 1000;
+        top: 56px;
+        position: fixed;
+        right: 46px;
+    }
+
+    .esconder-menu {
+        z-index: 1000;
+        color: aliceblue;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    #check:checked~.menu {
+
+        right: 0;
+    }
+}
+
+/* responisve de la informacion de las fechas  */
+@media(max-width: 768px) {
+
+    .contenedor-info-vuelo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titulo-sesion1 {
+        display: flex;
+        margin-top: 9%;
+        align-items: center;
+        padding: 0 40px;
+        gap: 10px;
+    }
+
+    .titulo-sesion1 h1 {
+        font-size: 25px;
+    }
+
+    .titulo-sesion1 img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-vuelos {
+        display: flex;
+        gap: 8px;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    @keyframes float {
+        0% {
+            transform: translatex(0px);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .flecha {
+
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .flecha img {
+        width: 17px;
+    }
+
+    /* le damos diseños a los vuelos  */
+    .menu-vuelos .vuelos {
+        display: flex;
+        width: 15vw;
+        text-decoration: none;
+        border: solid rgb(62, 62, 62) 3px;
+        border-bottom: none;
+        color: #1B2549;
+        text-align: center;
+        flex-direction: column;
+        gap: 1vh;
+        justify-content: center;
+        border-top: none;
+        border-left: none;
+
+        height: 9vh;
+
+    }
+
+    .menu-vuelos .vuelo1 {
+        display: flex;
+        width: 15vw;
+        text-decoration: none;
+        border: solid rgb(62, 62, 62) 3px;
+        border-bottom: none;
+        color: #1B2549;
+        text-align: center;
+        flex-direction: column;
+        gap: 1vh;
+        justify-content: center;
+        border-top: none;
+        border-left: none;
+
+        height: 9vh;
+
+    }
+
+
+    /* texto de los vuelos y dias disponibles */
+    .menu-vuelos .vuelos h1,
+    .vuelo1 h1 {
+        font-size: 1.9vw;
+
+    }
+
+
+    .menu-vuelos .vuelos p,
+    .vuelo1 p {
+        font-size: 1.5vw;
+    }
+
+
+    .menu-vuelos .vuelos:hover,
+    .vuelo1:hover {
+        height: 12vh;
+        border-radius: 10px;
+        background-color: #ffffff;
+        border: solid #1B2549;
+    }
+
+    .vuelos-predeterminados {
+        display: flex;
+        width: 100%;
+    }
+
+    .filtro-vuelo {
+        display: flex;
+        gap: 20px;
+    }
+
+    .filtro-vuelo h1 {
+        padding: 0 40px;
+        padding-right: 0;
+        font-size: 25px;
+
+    }
+
+    .btn-mejor-precio {
+        display: flex;
+        background-color: #1B2549;
+        width: 19vw;
+        height: 6vh;
+        color: white;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.8vw;
+        text-decoration: none;
+    }
+
+    .btn-max {
+        display: flex;
+        width: 2vw;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: normal;
+        border-radius: 100%;
+        height: 2vh;
+        border: solid 2px;
+
+
+    }
+ 
+
+    .btn-vuelo-directo {
+        display: flex;
+        background-color: #1B2549;
+        width: 18vw;
+        height: 6vh;
+        color: white;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.8vw;
+        text-decoration: none;
+    }
+
+    
+
+    .btn-vuelo-directo:hover {
+        background-color: #243265;
+    }
+
+    .btn-mejor-precio:hover {
+        background-color: #243265;
+    }
+
+
+
+
+
+}
+
+
+
+/* responsive de los vuelos */
+
+@media(max-width: 768px) {
+
+
+    /* diseño de los vuelos predeterminados */
+    .contenedor-vuelos-predeterminados {
+
+        display: flex;
+        width: 100%;
+
+        flex-direction: column;
+        gap: 2.1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.1rem;
+
+    }
+
+    .prede1 {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    .contenedor-blanco {
+        display: flex;
+        border-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #ffffff;
+        height: 20vh;
+
+
+    }
+
+    .contenedor-blanco img {
+        margin-top: 35px;
+        width: 40px;
+        transform: rotate(90deg);
+        height: 40px;
+
+    }
+
+    .lineas {
+        font-size: 13px;
+
+    }
+
+    .hora-salida {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        gap: 15px;
+
+
+
+    }
+
+    .avion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contenedor-gris {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background-color: #E3E3E3;
+        height: 20vh;
+    }
+
+    .btn-mejor-precio1 {
+        display: flex;
+        background-color: #1B2549;
+        width: 20vw;
+        height: 5vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 76.1%;
+        left: 29.5%;
+        font-size: 1.6vw;
+        text-decoration: none;
+        border-radius: 0;
+
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio2 {
+        display: flex;
+        background-color: #1B2549;
+        width: 20vw;
+        height: 5vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 120.8%;
+        left: 29.5%;
+        font-size: 1.6vw;
+        text-decoration: none;
+        border-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio3 {
+        display: flex;
+        background-color: #1B2549;
+        width: 20vw;
+        height: 5vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 165.5%;
+        left: 29.5%;
+        font-size: 1.6vw;
+        text-decoration: none;
+        border-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio4 {
+        display: flex;
+        background-color: #1B2549;
+        width: 20vw;
+        height: 5vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 210.1%;
+        left: 29.5%;
+        font-size: 1.6vw;
+        text-decoration: none;
+        border-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio5 {
+        display: flex;
+        background-color: #1B2549;
+        width: 20vw;
+        height: 5vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 254.9%;
+        left: 29.5%;
+        font-size: 1.6vw;
+        text-decoration: none;
+        border-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .info-cop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0%;
+
+    }
+
+    .precio {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    .precio p {
+        text-align: center;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* PIE DE PAGINA */
+@media(max-width: 768px) {
+
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-top: 2.1rem;
+        background-color: #1b2549;
+        color: #b6b6b6;
+        height: 40vh;
+
+    }
+
+    footer a {
+        color: #b6b6b6;
+        text-decoration: none;
+    }
+
+    .imgFooter img {
+        width: 2vw;
+
+    }
+
+    .imgFooter {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .infoFooter {
+        height: 40vh;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.3vw;
+    }
+
+
+
+
+}

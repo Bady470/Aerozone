@@ -1,0 +1,437 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid #4A90E2;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+li {
+    padding: 15px 25px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Línea inclinada entre elementos */
+/* li:not(:last-child) {
+    border-right: 2px solid #4A90E2;
+    transform: skewX(-25deg);
+    padding-right: 30px; Ajusta el espaciado */
+/* }
+
+li span {
+    display: inline-block;
+    transform: skewX(25deg); 
+}
+body{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    border: 2px solid pink;
+    border-radius: 20px;
+}
+
+.perfil img:hover{
+    transform: perspective(500px) rotateY(360deg);
+    transition: 0.8s;
+
+}
+#clock {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.perfil img:not(:hover){
+    transition: 0.8s;
+    transform: perspective(500px) rotateY(0deg);
+
+}
+@keyframes pulso {
+    0% {
+        transform: scale(1) ;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btnContactar {
+    animation: pulso 1.5s infinite;
+
+  
+}
+
+
+
+.btnContactar:hover{
+    background-color: aqua;
+}
+
+
+  */
+
+
+
+
+/* General Styles */
+
+
+
+
+
+
+
+/* slider */
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.slider-frame{
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+.slider-frame ul{
+    display: flex;
+    width: 500%;
+    animation: slider 15s infinite  ease-in-out ;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    10% {margin-left: 0%;}
+
+    20% {margin-left: -100%;}
+    30% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    50% {margin-left: -200%;}
+    
+    60% {margin-left: -300%;}
+    70% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+} */
+
+
+/* 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.image-slider{
+    width: 80%;
+    height: 80%;
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px black ;
+    animation: slider 10s linear infinite; 
+}
+
+@keyframes slider {
+    0%{
+        background: url(beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-umbrella-chair-blue-sky.jpg);
+    }
+    25%{
+        background: url(puerta\ abierta\ png.png);
+    }
+
+    50%{
+        background: url(puerta\ cerrada\ png.png);
+    }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    background: linear-gradient(to bottom, rgba(255, 126, 95, 0.8), rgba(254, 180, 123, 0.8)),
+                url('beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-umbrella-chair-blue-sky.jpg')
+                no-repeat center;
+    background-size: cover;
+    transform: perspective(500px) rotateY(0deg);
+    transition: transform 0.8s ease-in-out; 
+}
+
+div:hover {
+    transform: perspective(500px) rotateY(45deg); 
+}
+
+div:not(:hover) {
+    transform: perspective(500px) rotateY(0deg); 
+}
+
+ */
+
+
+
+
+
+/* .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puerta{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+#aviso{
+    width: 10vw;
+    
+}
+
+#puerta{
+    margin-top: -80px;
+    width: 20vw;
+}
+
+.casillas{
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.casillas input{
+    font-size: 30px;
+    height: 6vh;
+}
+ */
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: rgb(33, 33, 214);
+    color: beige;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.resaltar {
+    color: yellow;
+}
+
+.menu_mayor {
+    display: flex;
+    padding: 10PX;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 92.49%;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    padding: 1px;
+    background-color: #D9D9D9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.items {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    animation: ease-in;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.items img {
+    width: 25px;
+    height: 25px;
+}
+
+.items.active {
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+    font-weight: 680;
+}
+
+
+#busqueda {
+    background: #F6EEEE;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.busquedas.active {
+    display: block;
+
+}
+
+
+.busquedas {
+
+    display: none;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 40%;
+
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.formulario input,
+.formulario select {
+    padding: 8px;
+    width: 5%;
+
+    height: 2rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario .date {
+    height: 4.5vh;
+    width: 18%
+}
+
+.buscar {
+    background: #1B2549;
+    color: white;
+    border: none;
+    width: 8%;
+    height: 3rem;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buscar:hover {
+
+    background: #009062;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tab {
+    position: absolute;
+    top: -20px;
+    /* Ajusta la posición superior */
+/* left: 30px; */
+/* Ajusta la posición lateral */
+/* width: 100px; */
+/* height: 40px; */
+/* background-color: white; */
+/* border: 2px solid black; */
+/* border-bottom: none; */
+/* Elimina el borde inferior */
+/* border-radius: 10px 10px 0 0; */
+/* Bordes superiores redondeados
+} */

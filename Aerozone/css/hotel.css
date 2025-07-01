@@ -1,0 +1,940 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e2e2;
+}
+
+
+
+  /* header */
+  header {
+    width: 100%;
+    height: 150px;
+    background-color: #1B2549;
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    min-width: 120px;
+  }
+
+  .redes img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .redes .x {
+    width: 1.8rem;
+    height: 1.6rem;
+  }
+
+
+  .menu {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 36%;
+  }
+
+  .menu a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1B2549;
+    width: 200px;
+    height: 50PX;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #1B2549;
+    background-color: aliceblue;
+    transition: 3s;
+
+  }
+
+  .mostrar-menu,
+  .esconder-menu {
+    font-size: 30px;
+
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+  }
+
+  .mostrar-menu {
+    order: 1;
+
+  }
+
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover {
+    color: #6cc091;
+    text-decoration: underline;
+
+
+  }
+
+  #check {
+    display: none;
+  }
+
+/* contenedor de la pagina */
+.contenedor_principal {
+  display: flex;
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/fondo_hoteles.svg);
+  background-size: cover;
+  background-image: 100%;
+  background-position: center;
+  justify-content: center;
+
+
+}
+
+.contenedor_principal h1{
+text-align: left;
+font-size: 3.5rem;
+text-align: center;
+margin-right: 30%;
+color: white;
+}
+
+
+/* sesion tres la de la fila de hoteles disponibes */
+.titulo_sesion3 {
+    margin-top: 4.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4.1rem;
+}
+
+.titulo_sesion3 h1 {
+    font-size: 3vw;
+}
+
+.titulo_sesion3 p {
+    font-size: 1.5vw;
+}
+
+.hoteles_center {
+    /* en este div nos encargamos de centrar los el contenedor de hoteles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4.1rem;
+
+
+}
+
+.sesion_hoteles {  
+    /* en este div centramos los hoteles */
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+.hoteles_sesion3 {
+    /* en este div creamos el contenedor de los hoteles */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 23vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.img_hotel {
+    /* en este div creamos el contenedor de la imagen del hotel */
+    width: 100%;
+    height: 15vw;
+    overflow: hidden;
+}
+
+.img_hotel img {
+    /* en esta sesion nos encargamos de que la imagen del hotel ocupe todo el espacio disponible */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel_contenido {
+    /* en este apartado creamos el contenedor de la informacion del hotel */
+    display: flex;
+    width: 100%;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.calificacion_de_hotel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.6vw;
+    color: #1b2549;
+    font-weight: bold;
+}
+
+.precios_decripcion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.precio_desde {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0;
+    color: #000;
+}
+
+.por-dia {
+    gap: 12px;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+#precio_btn {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end
+}
+
+.btn_ver_mas {
+    background-color: #0d1b4c;
+    color: white;
+    width: 5vw;
+    height: 4.8vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.btn_ver_mas:hover {
+    background-color: #1a2b6d;
+}
+
+
+
+
+
+/* en este apartado creamos el slider de imagenes */
+
+        .slider {
+            position: relative;
+            background-color: transparent;
+            width: 80vw;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            border-radius:40px;
+        }
+
+        .slider .contenedor {
+            position: absolute;
+            width: 80vw;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        .slider .contenedor:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slider .contenedor:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .slider .contenedor:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            33.33% {
+                opacity: 1;
+            }
+        }
+
+
+
+
+.contenedor {
+    display: flex;
+    width: 80vw;
+    height: 58vh;
+    justify-items: left;
+    background-color: #1B2549;
+    border-radius: 40px;
+    gap: 40px;
+
+}
+
+.contenedor img {
+
+    height: 58vh;
+}
+
+.txt_slider {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 40%;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.codigo {
+    display: flex;
+    width: 92%;
+
+    justify-content: center;
+    align-items: center;
+
+    justify-content: space-between;
+   
+}
+
+.codigo img {
+    width: 130px;
+    height: 200px;
+    color: black;
+}
+
+.contenido_slider {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.contenido_slider h1 {
+    text-align: left;
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.contenido_slider p {
+    width: 100%;
+    font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.contenido_slider button {
+    width: 15vw;
+    height: 9.9vh;
+    background-color: #ffffffd8;
+    color: #1B2549;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 50vh;
+    margin-top: 3rem;
+
+}
+
+footer a {
+    color: #b6b6b6;
+}
+
+.imgFooter img {
+    width: 2vw;
+
+}
+
+.imgFooter {
+    display: flex;
+    gap: 1rem;
+}
+
+.infoFooter {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+
+/* reponsive */
+
+@media(max-width: 768px) {
+
+  /* header */
+
+
+
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%;
+    justify-content: space-around;
+    width: 40vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: none;
+
+  }
+
+  .redes img {
+    display: none;
+
+  }
+
+  .redes .x {
+    display: none;
+
+  }
+
+
+  /* menu de hamburguesa */
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 26%;
+    height: 100vh;
+    background-color: #1B2549;
+    right: -100%;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+
+    display: flex;
+    border: none;
+    align-items: center;
+    background: none;
+    color: aliceblue;
+  }
+
+  .mostrar-menu {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1000;
+    top: 56px;
+    position: fixed;
+    right: 50px;
+  }
+
+  .esconder-menu {
+    z-index: 1000;
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  #check:checked~.menu {
+
+    right: 0;
+  }
+}
+
+
+/* responsive */
+@media(max-width: 768px) {
+
+  .contenedor_principal {
+    height: 50vh;
+  }
+  .contenedor_principal h1{
+    font-size: 1.8rem;
+  }
+}
+
+/* responsive de los hoteles */
+@media(max-width: 768px) {
+
+
+
+/* sesion tres la de la fila de hoteles disponibes */
+.titulo_sesion3 {
+    margin-top: 2.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.1rem;
+}
+
+.titulo_sesion3 h1 {
+    font-size: 4vw;
+}
+
+.titulo_sesion3 p {
+    font-size: 2vw;
+}
+
+.hoteles_center {
+    /* en este div nos encargamos de centrar los el contenedor de hoteles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.1rem;
+
+
+}
+
+.sesion_hoteles {  
+    /* en este div centramos los hoteles */
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+.hoteles_sesion3 {
+    /* en este div creamos el contenedor de los hoteles */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 23vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.img_hotel {
+    /* en este div creamos el contenedor de la imagen del hotel */
+    width: 100%;
+    height: 15vw;
+    overflow: hidden;
+}
+
+.img_hotel img {
+    /* en esta sesion nos encargamos de que la imagen del hotel ocupe todo el espacio disponible */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel_contenido {
+    /* en este apartado creamos el contenedor de la informacion del hotel */
+    display: flex;
+    width: 100%;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.calificacion_de_hotel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 2vw;
+    color: #1b2549;
+    font-weight: bold;
+}
+
+.precios_decripcion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.precio_desde {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.precio {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 0;
+    color: #000;
+}
+
+.por-dia {
+    gap: 12px;
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+
+#precio_btn {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end
+}
+
+.btn_ver_mas {
+    background-color: #0d1b4c;
+    color: white;
+    width: 7vw;
+    height: 3vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+
+.btn_ver_mas:hover {
+    background-color: #1a2b6d;
+}
+
+
+
+
+}
+
+
+@media(max-width: 768px){
+    
+
+/* en este apartado creamos el slider de imagenes */
+
+        .slider {
+            position: relative;
+            background-color: transparent;
+            width: 80vw;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            border-radius:40px;
+        }
+
+        .slider .contenedor {
+            position: absolute;
+            width: 80vw;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        .slider .contenedor:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slider .contenedor:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .slider .contenedor:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            33.33% {
+                opacity: 1;
+            }
+        }
+
+
+
+
+.contenedor {
+    display: flex;
+    width: 80vw;
+    height: 58vh;
+    justify-items: left;
+    background-color: #1B2549;
+    border-radius: 40px;
+    gap: 40px;
+
+}
+
+.contenedor img {
+
+    height: 100%;
+}
+
+.txt_slider {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.codigo {
+    display: flex;
+    width: 92%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.codigo img {
+    width: 80px;
+    height: 80px;
+    color: black;
+}
+
+.contenido_slider {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.contenido_slider h1 {
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenido_slider p {
+    width: 100%;
+    font-size: 0.8em;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.contenido_slider button {
+    width: 14vw;
+    height: 6vh;
+    background-color: #ffffffd8;
+    color: #1B2549;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+
+}
+
+
+
+/* PIE DE PAGINA */
+@media(max-width: 768px){
+  
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  
+  background-color: #1b2549;
+  color: #b6b6b6;
+  height: 40vh;
+
+}
+
+footer a {
+  color: #b6b6b6;
+  text-decoration: none;
+}
+
+.imgFooter img {
+  width: 2vw;
+
+}
+
+.imgFooter {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoFooter {
+  height: 40vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.3vw;
+}
+
+
+
+
+}

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/indexA.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="Body">
+    <header>
+        <img src="img/logo de la empresa.png" alt="" class="logo">
+        <div class="inicio_sesion">
+            <a id="inicio" href="" ><img id="inicio" src="img/PERSONA.png" alt="icon" width="48vw" height="48vh">INICIAR SESION</a>
+            <a id="unirse" href="">UNIRSE</a>
+        </div>
+
+        <div class="redes">
+            <img src="img/facebook.png" alt="">
+            <img src="img/youtube.png" alt="">
+            <img src="img/instagram.png" alt="">
+            <img class="x" src="img/x (1).png" alt="">
+        </div>
+
+    </header>
+    <div class="contenedor_principal">
+        <input type="checkbox" id="check">
+
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Reservas</a>
+            <a href="#">Ranking</a>
+            <a href="#">Servicios</a>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+
+        </nav>
+        <div class="menu_mayor">
+
+            <nav class="menu1">
+                <div class="items_todos">
+                    <a href="reservas.html">
+                        <div class="items active" data-target="vuelos"><img src="img/avion.png" alt=""> Vuelos
+                        </div>
+                    </a>
+                    <a href="paquetes.html">
+                        <div class="items" data-target="paquetes"><img src="img/palma.png" alt=""> Paquetes</div>
+                    </a>
+                    <a href="hotel.html">
+                        <div class="items" data-target="hoteles"><img src="img/hotel.png" alt=""> Hoteles</div>
+                    </a>
+                    <a href="seccion_carros.html">
+                        <div class="items" data-target="autos"><img src="img/carro.png" alt=""> Autos</div>
+                    </a>
+                </div>
+            </nav>
+
+
+            <section id="busqueda">
+
+                <div class="busquedas active" id="vuelos">
+                    <div class="opciones">
+                        <label><input type="radio" name="opcion-vuelo" checked>Ida y vuelta</label>
+                        <label><input type="radio" name="opcion-vuelo">Solo ida</label>
+                        <label><input type="radio" name="opcion-vuelo">Varias ciudades</label>
+                        <select name="tipo" id="personal">
+                            <option value="turista">Turista</option>
+                            <option value="">Ejecutivo</option>
+                        </select>
+
+                    </div>
+
+                    <div class="formulario">
+                        <input class="date" type="text" placeholder="¿De donde?">
+                        <input class="date" type="text" placeholder="¿A donde?">
+
+                        <input placeholder="fecha" type="date" class="date">
+                        <input placeholder="fecha" type="date" class="date">
+
+                        <input class="number" placeholder="number" type="number" min="1" value="1">
+                        <button class="buscar">Buscar</button>
+                    </div>
+
+
+
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- ventana emergente del incio de sesion -->
+       
+
+            <div class="contenedor-padre" id="ventanaInicio">
+                <a id="cerrar" href=""><img class="cerrar" src="img/x-sesion.svg" alt=""></a>
+                <img class="logo-inicio" src="img/logo empresa 2.svg" alt="">
+                <div class="usuario"><img src="img/muñeco-inicio.svg" alt=""><input type="text"
+                        placeholder="ingrese su usuario"></div>
+                <div class="contraseña"><img src="img/candado-sesion.svg" alt=""><input type="password"
+                        placeholder="ingrese su contraseña"></div>
+
+                <a class="btnIniciarsesion" href="">Iniciar sesion</a>
+                <div class="olvido-contra">
+                    <a href="">Olvidastes tu contraseña?</a>
+                    <a href="">Registrarse</a>
+
+                </div>
+
+
+            </div>
+
+     
+        <!-- termina la ventana emergente -->
+
+
+
+
+    </div>
+
+
+    </div>
+
+    <!-- sesion de algunos vuelos nacionales  e internacinale -->
+    <div class="sesion3">
+
+        <div class="contenedor_sesion3">
+
+
+            <div class="contenedor_bogota_cartagena">
+                <div class="imgbogota">
+                    <img src="img/bogotasesio3.png" alt="">
+
+                    <div id="relleno">
+
+                        <div class="cop">
+                            <div class="txt_cop">
+                                <h2>Bogota</h2>
+                                <p>Por trayecto desde</p>
+                            </div>
+                            <div class="txtValor">
+                                <img src="img/extrellas.svg" alt=""> COP 530.000
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="imgbogota2">
+                    <img src="img/cartagena.png" alt="">
+
+                    <div id="relleno">
+
+                        <div class="cop">
+                            <div class="txt_cop">
+                                <h2>Cartagena</h2>
+                                <p>Por trayecto desde</p>
+                            </div>
+                            <div class="txtValor">
+                                <img src="img/extrellas.svg" alt=""> COP 530.000
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="santa_medallo">
+                <div class="contenedor_santa_medellin">
+                    <div class="img_santa_marta">
+                        <img src="img/santa marta sesion3.png" alt="">
+
+
+                        <div id="relleno_santa_marta">
+
+                            <div class="cop_santa_marta">
+                                <div class="txt_cop_santa_marta">
+                                    <h2>Santa marta</h2>
+                                    <p>Por trayecto desde</p>
+                                </div>
+                                <div class="txtValor_santa_marta">
+                                    <img src="img/extrellas.svg" alt=""> COP 530.000
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="img_santa_marta">
+                        <img src="img/medellin_ranking.jpg" alt="">
+
+
+                        <div id="relleno_santa_marta">
+
+                            <div class="cop_santa_marta">
+                                <div class="txt_cop_santa_marta">
+                                    <h2>Medellin</h2>
+                                    <p>Por trayecto desde</p>
+                                </div>
+                                <div class="txtValor_santa_marta">
+                                    <img src="img/extrellas.svg" alt=""> COP 530.000
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="contenedor_pamplona_palomino">
+                    <div class="img_pamplona">
+                        <img src="img/pamplona.png" alt="">
+
+                        <div id="relleno_pamplona">
+
+                            <div class="cop_pamplona">
+                                <div class="txt_cop_pamplona">
+                                    <h2>Pamplona</h2>
+                                    <p>Por trayecto desde</p>
+                                </div>
+                                <div class="txtValor_pamplona">
+                                    <img src="img/extrellas.svg" alt=""> COP 530.000
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="img_pamplona">
+                        <img src="img/palomino.png" alt="">
+
+                        <div id="relleno_pamplona">
+
+                            <div class="cop_pamplona">
+                                <div class="txt_cop_pamplona">
+                                    <h2>Palomino</h2>
+                                    <p>Por trayecto desde</p>
+                                </div>
+                                <div class="txtValor_pamplona">
+                                    <img src="img/extrellas.svg" alt=""> COP 530.000
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="botones_sesio3">
+                <button>vuelos nacionales</button>
+                <button>vuelos internacionales</button>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <section class="sesion-3">
+        <h1>Vuelos Nacionales e Internacionales</h1>
+
+        <div class="contenedor-1">
+            <div class="contenedor_img">
+                <div class="contenedor_sombra">
+                    <div class="cotenedor_blanco">
+                        <div class="contenido_izq">
+                            <h1>Bogota</h1>
+                            <p>Por Trayecto Desde</p>
+                        </div>
+                        <div class="contenido_der">
+                            <img src="img/extrellas.svg" alt="">
+                            <p>COP 530.000</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="contenedor_img1">
+                <div class="contenedor_sombra">
+                    <div class="cotenedor_blanco">
+                        <div class="contenido_izq">
+                            <h1>Cartagena</h1>
+                            <p>Por Trayecto Desde</p>
+                        </div>
+                        <div class="contenido_der">
+                            <img src="img/extrellas.svg" alt="">
+                            <p>COP 530.000</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="contenedor-1">
+            <div class="contenedor_img2">
+                <div class="contenedor_sombra">
+                    <div class="cotenedor_blanco">
+                        <div class="contenido_izq">
+                            <h1>Medellin</h1>
+                            <p>Por Trayecto Desde</p>
+                        </div>
+                        <div class="contenido_der">
+                            <img src="img/extrellas.svg" alt="">
+                            <p>COP 530.000</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="contenedor_img3">
+                <div class="contenedor_sombra">
+                    <div class="cotenedor_blanco">
+                        <div class="contenido_izq">
+                            <h1>Pamplona</h1>
+                            <p>Por Trayecto Desde</p>
+                        </div>
+                        <div class="contenido_der">
+                            <img src="img/extrellas.svg" alt="">
+                            <p>COP 530.000</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- sesion de los destinos mas vistados(rabking) -->
+    <div class="sesion4">
+
+        <h1 id="ranking">Lugares mas visitados</h1>
+
+        <div class="img_ranking">
+
+            <div class="ranking1"><img src="img/new yor_ranking.jpg" alt="">
+                <div class="num_ranking">
+                    <img class="img1" src="img/1.svg" alt="">
+                    <h2>New York City</h2>
+                    <img class="img2" src="img/extrellas.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="ranking1"><img src="img/cartagena_ranking.jpg" alt="">
+                <div class="num_ranking">
+                    <img class="img1" src="img/2.svg" alt="">
+                    <h2>Cartagena</h2>
+                    <img class="img2" src="img/extrellas.svg" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="ranking1"><img src="img/pamplona_ranking.jpg" alt="">
+                <div class="num_ranking">
+                    <img class="img1" src="img/3.svg" alt="">
+                    <h2>Pamplona</h2>
+                    <img class="img2" src="img/extrellas.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="ranking_4_5_6">
+
+            <div class="ranking1"><img src="img/paris.jpg" alt="">
+                <div class="num_ranking">
+                    <img class="img1" src="img/4.svg" alt="">
+                    <h2>Paris Francia</h2>
+                    <img class="img2" src="img/extrellas.svg" alt="">
+                </div>
+            </div>
+            <div class="ranking1"> <img src="img/santa_marta_ranking.jpg" alt="">
+                <div class="num_ranking">
+                    <img class="img1" src="img/5.svg" alt="">
+                    <h2>Santa Marta</h2>
+                    <img class="img2" src="img/extrellas.svg" alt="">
+                </div>
+            </div>
+            <div class="ranking1"> <img src="img/medellin_ranking.jpg" alt="">
+                <div class="num_ranking">
+                    <img class="img1" src="img/6.svg" alt="">
+                    <h2>Medellin</h2>
+                    <img class="img2" src="img/extrellas.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- paquetes y ofertas = comida,carro,hotel -->
+    <div class="sesion5">
+
+        <h1>Complementa tu experiencia</h1>
+
+        <div class="paquetes">
+            <a href="seccion_carros.html" class="hotel_comida_carro"><img src="img/carro_ranking.png" alt="">
+                <p>Alquiler de vehiculos con descuentos hasta del 20%.</p>
+            </a>
+            <a href="hotel.html" class="hotel_comida_carro"><img src="img/alojamientos.png" alt="">
+                <p>El alojamiento ideal para<br> tu próximo viaje</p>
+            </a>
+            <a class="hotel_comida_carro"><img src="img/comida.png" alt="">
+                <p>Disfruta de la mejor comida <br>para tu viaje.</p>
+            </a>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- sesion de las mascotas -->
+    <div class="sesion6">
+        <img src="img/mascotas_en_cabina_header.jpg" alt="">
+
+        <div class="texto_boton">
+            <h1>¡Viajá con tu mejor amigo!</h1>
+            <p>En nuestra aerolínea, las mascotas también son parte <br>de tu aventura.
+                Consultá nuestras políticas y viajá<br> sin preocupaciones.</p>
+            <button class="btn_infor">Mas informacion</button>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- pie de pagina -->
+    <footer>
+        <div class="infoFooter" id="infoFooter">
+            <h1 >Aerolinea Aerozone</h1>
+            <p>Llevandote a tu destino con comodidad y confianza</p>
+            <p>Descubre el mundo con nosotros.</p>
+        </div>
+
+        <div class="infoFooter">
+            <h1>Enlaces rápidos</h1>
+            <a href="index.html">Inicio</a>
+            <a href="reservas.html">Destinos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Contactanos</a>
+        </div>
+
+        <div class="infoFooter">
+            <h1>Contáctanos</h1>
+            <p>Teléfono: +57 323 813 4059</p>
+            <p>Correo:areozone@contac.com</p>
+            <div class="imgFooter">
+                <img src="img/youtube.png" alt="">
+                <img src="img/facebook.png" alt="">
+                <img src="img/instagram.png" alt="">
+                <img src="img/x (1).png" alt="">
+            </div>
+
+        </div>
+    </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Obtener los elementos
+        let iniciar = document.getElementById("inicio");
+        let ventanaInicio = document.getElementById("ventanaInicio");
+        let cerrar = document.getElementById("cerrar");
+
+let body =document.getElementById("Body");
+
+        // Agregar eventos si los elementos existen
+        if (iniciar && ventanaInicio && cerrar) {
+            iniciar.addEventListener("click", function (e) {
+                e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+                console.log("Botón de inicio clickeado.");
+                ventanaInicio.style.display = "flex"; // Mostrar la ventana
+                document.body.style.overflow="hidden";
+
+            });
+            cerrar.addEventListener("click", function (e) {
+                e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+                console.log("Botón de cerrar clickeado.");
+                ventanaInicio.style.display = "none"; // Ocultar la ventana
+                document.body.style.overflow="";
+            });
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

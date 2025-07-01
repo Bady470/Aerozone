@@ -1,0 +1,702 @@
+/* Estilo para el contenedor principal del slider */
+   /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slider {
+            position: relative;
+            width: 90vw;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .slider .contenedor {
+            position: absolute;
+            width: 90vw;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        .slider .contenedor:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slider .contenedor:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .slider .contenedor:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            33.33% {
+                opacity: 1;
+            }
+        }
+
+
+
+
+.contenedor {
+    display: flex;
+    width: 90vw;
+    height: 58vh;
+    justify-items: left;
+    background-color: #1B2549;
+    border-radius: 40px;
+    gap: 100px;
+
+}
+
+.contenedor img {
+
+    height: 58vh;
+}
+
+.txt_slider {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40%;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.codigo {
+    display: flex;
+    width: 80%;
+
+    justify-content: center;
+    align-items: center;
+
+    justify-content: space-between;
+   
+}
+
+.codigo img {
+    width: 130px;
+    height: 200px;
+    color: black;
+}
+
+.contenido_slider {
+    display: flex;
+    width: 44%;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.contenido_slider h1 {
+    text-align: left;
+    font-size: 2.5vw;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.contenido_slider p {
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.contenido_slider button {
+    width: 15vw;
+    height: 9.9vh;
+    background-color: #ffffffd8;
+    color: #1B2549;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .date-input {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .placeholder {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .date-input:focus + .placeholder,
+  .date-input:not(:placeholder-shown) + .placeholder {
+    transform: translateY(-20px);
+    font-size: 10px;
+    color: #555;
+  } */
+
+
+  .menu {
+  display: flex;
+  flex-direction: column; /* Ajuste inicial para móvil */
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.menu-opciones {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.menu-busqueda {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en línea */
+  gap: 10px; /* Espaciado entre elementos */
+}
+
+.menu-busqueda input,
+.menu-busqueda select,
+.menu-busqueda button {
+  flex: 1 1 calc(50% - 10px); /* Toma el 50% del ancho menos el gap */
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+  }
+
+  .menu-opciones {
+    flex-direction: column; /* Botones apilados */
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-busqueda {
+    flex-direction: column; /* Campos en una sola columna */
+    align-items: center;
+  }
+
+  .menu-busqueda input,
+  .menu-busqueda select,
+  .menu-busqueda button {
+    flex: 1 1 100%; /* Toman todo el ancho */
+    max-width: 100%; /* Evita que se desborden */
+  }
+}
+
+¿
+/* Estilos del contenedor */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  border: none;
+ background-color: transparent;
+   cursor: pointer;
+   width: 60px;
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-menu li img {
+  width: 40px;
+  height: 40px;
+}
+.dropdown-button :hover{
+  background-color: #1b2549;
+   width: 40px;
+  height: 40px; 
+
+}
+.dropdown-menu li:hover  {
+  background-color: #1b2549;
+}
+
+/* Mostrar el menú cuando se haga clic */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.contenedor_img{
+  display: flex;
+ width: 30%;
+ height: 60vh;
+  background-image:url(img/bogotasesio3.png);
+  background-size: 100%;
+  background-size: cover;
+  align-items: end;
+
+}
+.contenedor_sombra{
+  display: flex;
+  width: 100%;
+  height: 18vh;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #00000098;
+}
+.cotenedor_blanco{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  height: 70%;
+}
+.contenido_izq{
+  display: flex;
+  height:70%;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1b2549;
+
+}
+.contenido_izq h1{
+  font-size: 20px;
+}
+.contenido_izq p{
+  font-size: 10px;
+
+}
+.contenido_der{
+  display: flex;
+  background-color: #1b2549;
+  height: 70%;
+    align-items: center;
+  flex-direction: column;
+  
+  justify-content: start;
+
+}
+.contenido_der img{
+  width: 120px;
+}
+.contenido_der p{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_mayor {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu1 {
+    display: flex;
+    align-items: center;
+    width: 69.9vw;
+
+    height: 7vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    padding: 1px;
+    border: 2px black solid;
+    background-color: #d9d9d9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    width: 33vw;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 1.3vw;
+
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+}
+
+.items img {
+    width: 1.7vw;
+    height: 4vh;
+}
+
+.items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+}
+
+.items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+}
+
+.items:not(hover) {
+    transition: 1s;
+}
+
+#busqueda {
+    display: flex;
+    background: #f6eeee;
+    align-items: center;
+    width: 70vw;
+    height: 20vh;
+    justify-content: space-evenly;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.lugar_recogida {
+    display: flex;
+    width: 14vw;
+    height: 9vh;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #000000;
+    border-radius: 5px;
+
+}
+
+.lugar_recogida img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.lugar_recogida input {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    height: 8vh;
+
+}
+
+.fecha_recogida {
+    display: flex;
+    width: 14vw;
+    background-color: transparent;
+    height: 9vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 9vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.time input {
+    display: flex;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+
+    height: 8vh;
+    width: 5vw;
+    align-items: center;
+}
+
+.fecha_entrega {
+    display: flex;
+    width: 14vw;
+    background-color: transparent;
+    height: 9vh;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 7vw;
+    height: 9.2vh;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buscar:hover {
+    background: #009062;
+}
+
+
+.padre{
+  width: 50vw;
+  height: 50vh;
+  background-color: chocolate;
+  text-align: center;
+}
+
+.ventanaEmergente{
+  width: 80vw;
+  height: 50vh;
+  background-color: #009062;
+  display: none;
+  position: absolute;
+ top: 25vh;
+ transition: 3s;
+  left: 10vw;
+  text-align: center;
+}
+
+
+
+
+.pantalla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1b2549;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  height: 100vh;
+}
+.contenedor-padre{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 32vw;
+  height: 80vh;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor-padre .logo-inicio{
+  width: 10vw;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  
+}
+
+.usuario img{
+  width: 5vw;
+  position: absolute;
+  margin-left: -4px;
+}
+.usuario input{
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  height: 8vh;
+  font-size: 1vw;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+}
+
+.contraseña {
+  display: flex;
+  align-items: center;
+  
+}
+
+.contraseña img{
+  width: 5vw;
+  position: absolute;
+  margin-left: 20.5vw;
+}
+.contraseña input{
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+text-align: center;
+  height: 8vh;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+}
+.btnIniciarsesion{
+  display: flex;
+  text-decoration: none;
+  font-size: 1.7vw;
+  width: 25vw;
+  background-color: #1b2549;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+
+
+
+.olvido-contra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+justify-content: space-between;
+
+}
+.olvido-contra a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+/* 
+
+ <div class="menu_mayor">
+
+                <nav class="menu1">
+                    <div class="items_todos">
+                        <div class="items active" data-target="vuelos"><img src="img/avion.png" alt=""> Vuelos</div>
+                        <div class="items" data-target="paquetes"><img src="img/palma.png" alt=""> Paquetes</div>
+                        <div class="items" data-target="hoteles"><img src="img/hotel.png" alt=""> Hoteles</div>
+                        <div class="items" data-target="autos"><img src="img/carro.png" alt=""> Autos</div>
+                    </div>
+                </nav>
+
+
+                <section id="busqueda">
+
+                    <div class="lugar_recogida"> <input placeholder="lugar de recogida" type="text"><img
+                            class="flotante" src="img/ubicacion.svg" alt=""></div>
+
+                    <input class="fecha_recogida" type="date" name="fecha" id="fecha_recogida">
+                    <div class="time">
+                        <input type="time" name="hora" id="hora_recogida">
+                    </div>
+                    <input class="fecha_entrega" type="date" name="fecha" id="fecha_entrga">
+                    <div class="time">
+                        <input type="time" name="hora" id="hora_entrega">
+                    </div>
+                    <button class="buscar">Buscar</button>
+
+
+                </section>
+
+
+
+            </div> */

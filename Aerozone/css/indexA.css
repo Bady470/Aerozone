@@ -1,0 +1,3576 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+
+
+/* header */
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #1B2549;
+  color: white;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.inicio_sesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25vw;
+  min-width: 150px;
+}
+
+.inicio_sesion #inicio,
+.inicio_sesion #unirse {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.inicio_sesion #inicio img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.3rem;
+}
+
+
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  min-width: 120px;
+}
+
+.redes img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.redes .x {
+  width: 1.8rem;
+  height: 1.6rem;
+}
+
+
+/* ventanas emeergente */
+
+
+
+/* ventana de incio de sesion */
+
+
+.cerrar {
+  position: absolute;
+  right: 40px;
+
+
+}
+
+.contenedor-padre {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 32vw;
+  height: 80vh;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+  background-size: cover;
+  background-position: center;
+  transition: 8s;
+}
+
+.contenedor-padre .logo-inicio {
+  width: 10vw;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+
+}
+
+.usuario img {
+  width: 5vw;
+  position: absolute;
+  margin-left: -4px;
+}
+
+.usuario input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  height: 8vh;
+  font-size: 1vw;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+}
+
+.contraseña {
+  display: flex;
+  align-items: center;
+
+}
+
+.contraseña img {
+  width: 5vw;
+  position: absolute;
+  margin-left: 20.5vw;
+}
+
+.contraseña input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+  text-align: center;
+  height: 8vh;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+}
+
+.btnIniciarsesion {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.7vw;
+  width: 25vw;
+  background-color: #1b2549;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+
+
+
+.olvido-contra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  justify-content: space-between;
+
+}
+
+.olvido-contra a {
+  text-decoration: none;
+  color: white;
+}
+
+termina la ventana de incio de sesion .menu {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+}
+
+.menu a {
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1B2549;
+  width: 200px;
+  height: 50PX;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #1B2549;
+  background-color: aliceblue;
+  transition: 3s;
+
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+
+  cursor: pointer;
+  display: none;
+  transition: 0.5s;
+}
+
+.mostrar-menu {
+  order: 1;
+
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #6cc091;
+  text-decoration: underline;
+
+
+}
+
+#check {
+  display: none;
+}
+
+/* contenedor de la pagina */
+.contenedor_principal {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(img/FONDO\ INDEX.png);
+  background-size: cover;
+  background-image: 100%;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* menu que esta en de busqueda de vuelos en la parte principal */
+.menu_mayor {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu1 {
+  display: flex;
+  align-items: center;
+  width: 99.6%;
+  height: 7vh;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 2rem;
+  padding: 1px;
+  border: 2px black solid;
+  background-color: #d9d9d9;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.items_todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 39%;
+}
+
+.items_todos a {
+  text-decoration: none;
+  color: black;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 1.3vw;
+
+  animation: ease-in;
+  border-bottom: 3px solid transparent;
+}
+
+.items img {
+  width: 20%;
+  height: 10%;
+}
+
+.items.active:hover {
+  border-bottom: 2.4px solid rgb(0, 0, 0);
+  /* font-weight: 680; */
+}
+
+.items:hover {
+  border-bottom: 2.4px solid rgb(0, 0, 0);
+  /* font-weight: 680; */
+  transition: 0.5s;
+}
+
+.items:not(hover) {
+  transition: 1s;
+}
+
+#busqueda {
+  background: #f6eeee;
+  padding: 20px;
+  width: 90vw;
+  height: 17vh;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.busquedas.active {
+  display: block;
+}
+
+.busquedas {
+  display: none;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 15px;
+  width: 40%;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.formulario input,
+.formulario select {
+  padding: 8px;
+  width: 5%;
+  border: 1px black solid;
+
+  height: 2rem;
+  font-size: 16px;
+
+  border-radius: 5px;
+}
+
+.formulario .date {
+  height: 4.5vh;
+  width: 18%;
+}
+
+.buscar {
+  background: #1b2549;
+  color: white;
+  border: none;
+  width: 8%;
+  height: 3rem;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buscar:hover {
+  background: #009062;
+}
+
+
+/* sesion3 vuelos populares*/
+.sesion3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.contenedor_sesion3 {
+  display: flex;
+  width: 90vw;
+  height: 100%;
+  border: 7px black solid;
+  border-radius: 0px;
+  position: relative;
+  /* flex-direction: column; */
+}
+
+.contenedor_bogota_cartagena {
+  display: flex;
+  flex-direction: column;
+  width: 40.5%;
+  height: 100%;
+  /* background-color: #009062; */
+  position: relative;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imgbogota {
+  width: 96%;
+  height: 100%;
+
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.imgbogota2 {
+  width: 96%;
+  height: 100%;
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.imgbogota2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgbogota img {
+  width: 100%;
+  height: 100%;
+}
+
+#relleno {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+
+  /* opacity: 50%; */
+  top: 72.7%;
+  position: absolute;
+}
+
+.cop {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.txt_cop {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin: 12px;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt_cop p {
+  font-weight: bold;
+  color: #2a2929;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtValor {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 30px;
+  font-size: 1.5rem;
+}
+
+/* aca finaliza la primera sesion  */
+.botones_sesio3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  background-color: #e2e2e2;
+  justify-content: space-evenly;
+  background-color: cfcfcf;
+  border: black solid 7px;
+  margin-left: 40.5%;
+  top: -6px;
+  border-top: none;
+  border-right: none;
+  width: 59.5%;
+  height: 8.8%;
+}
+
+.botones_sesio3 button {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 9vh;
+  background-color: #1b2549;
+  border: 4px black solid;
+  border-radius: 10px;
+  color: #d9d9d9;
+  font-size: 2rem;
+}
+
+.santa_medallo {
+  margin-top: 7%;
+  display: flex;
+  width: 59.5%;
+  flex-direction: column;
+  gap: 1.5%;
+  height: 113.5vh;
+}
+
+.contenedor_santa_medellin {
+  display: flex;
+
+  width: 100%;
+  height: 55.5vh;
+  gap: 15px;
+}
+
+.img_santa_marta {
+  width: 48.6%;
+  height: 100%;
+  position: relative;
+}
+
+.img_santa_marta img {
+  width: 100%;
+  height: 100%;
+}
+
+#relleno_santa_marta {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+
+  /* opacity: 50%; */
+  top: 73%;
+  position: absolute;
+}
+
+.cop_santa_marta {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.cop_santa_marta h1 {
+  font-size: rem;
+  color: #2a2929;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.txt_cop_santa_marta {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin: 12px;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt_cop_santa_marta p {
+  font-weight: bold;
+  color: #2a2929;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtValor_santa_marta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+.contenedor_pamplona_palomino {
+  display: flex;
+  gap: 1.5%;
+  height: 100%;
+}
+
+.img_pamplona {
+  width: 48.6%;
+  height: 93.5%;
+  position: relative;
+}
+
+.img_pamplona img {
+  width: 100%;
+  height: 100%;
+}
+
+#relleno_pamplona {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+  top: 73%;
+  position: absolute;
+}
+
+.cop_pamplona {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.txt_cop_pamplona {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin: 12px;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt_cop_pamplona p {
+  font-weight: bold;
+  color: #2a2929;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtValor_pamplona {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+/* sesion4 es la del rankig */
+.sesion4 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin-top: 40px;
+
+
+
+}
+
+.sesion4 h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.img_ranking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80%;
+  height: auto;
+  position: relative;
+}
+
+.ranking1 {
+
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 29%;
+  height: 50vh;
+  background-color: #1b2549;
+  border-radius: 20px;
+
+  margin-top: 3%;
+
+}
+
+.ranking1 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+.num_ranking {
+  width: 29%;
+  height: 5.1vh;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 19.9%;
+}
+
+.num_ranking h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7rem;
+  color: #cfcfcf;
+}
+
+.num_ranking .img1 {
+  width: 60PX;
+}
+
+.num_ranking .img2 {
+  width: 150PX;
+}
+
+.ranking_4_5_6 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/* sesion 5 la de los paquetes */
+
+.sesion5 {
+  display: flex;
+  width: 100%;
+  height: 66.61vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+.sesion5 h1 {
+  text-align: center;
+  font-size: 3.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.paquetes {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  justify-content: space-between;
+  width: 87%;
+  height: 100%;
+}
+
+.hotel_comida_carro {
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: 28.2%;
+  height: 100%;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: #1b2549 solid 3px;
+
+}
+
+.hotel_comida_carro:hover {
+  background-color: #1b2549;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.hotel_comida_carro img {
+  width: 60.1%;
+  height: 57%;
+  border-radius: 20px;
+
+}
+
+.hotel_comida_carro p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.sesion6 {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  height: 635px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.sesion6 img {
+  width: 100%;
+  height: auto;
+
+}
+
+.texto_boton {
+  display: flex;
+  width: 65%;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #b1393900;
+  align-items: center;
+  position: absolute;
+}
+
+.texto_boton h1 {
+  color: #1b2549;
+  font-size: 4vw;
+
+}
+
+.texto_boton p {
+  text-align: center;
+  color: #2a2929;
+  font-size: 1vw;
+
+}
+
+.btn_infor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  width: 20%;
+  height: 15%;
+  border-radius: 15px;
+  border: #1b2549 solid 2px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.btn_infor:hover {
+  background: #ecf0ff;
+}
+
+.sesion7 {
+  height: 10vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1b2549;
+  color: #b6b6b6;
+  height: 50vh;
+  margin-top: 3rem;
+
+}
+
+footer a {
+  color: #b6b6b6;
+}
+
+.imgFooter img {
+  width: 2vw;
+
+}
+
+.imgFooter {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoFooter {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+
+  /* header */
+
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%;
+    justify-content: space-around;
+    width: 40vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: none;
+
+  }
+
+  .redes img {
+    display: none;
+
+  }
+
+  .redes .x {
+    display: none;
+
+  }
+
+
+  /* menu de hamburguesa */
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 26%;
+    height: 100vh;
+    background-color: #1B2549;
+    right: -100%;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+
+    display: flex;
+    border: none;
+    align-items: center;
+    background: none;
+    color: aliceblue;
+  }
+
+  .mostrar-menu {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1000;
+    top: 56px;
+    position: fixed;
+    right: 50px;
+  }
+
+  .esconder-menu {
+    z-index: 1000;
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  #check:checked~.menu {
+
+    right: 0;
+  }
+ 
+  
+}
+
+
+/* responsive */
+@media(max-width: 768px) {
+
+  /* menu que esta en de busqueda de vuelos en la parte principal */
+  .menu_mayor {
+    position: absolute;
+    top: 98vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu1 {
+    display: flex;
+    align-items: center;
+    width: 99.6%;
+    height: 7vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    padding: 1px;
+    border: 2px black solid;
+    background-color: #d9d9d9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .items_todos a {
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+
+    font-size: 2vw;
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+  }
+
+  .items img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+  }
+
+  .items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+
+  }
+
+  .items:not(hover) {
+    transition: 1s;
+  }
+
+  #busqueda {
+
+    background: #f6eeee;
+    padding: 20px;
+    width: 90vw;
+    height: 17vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .busquedas.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .busquedas {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+  }
+
+  .opciones label {
+    color: black;
+    font-size: 0.8rem;
+  }
+
+  .opciones select {
+    padding: 5px;
+    width: 20%;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .formulario input {
+    padding: 8px;
+    width: 4%;
+    border: 1px black solid;
+    height: 2rem;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  .formulario .number {
+    height: 22px;
+
+  }
+
+  .formulario .date {
+    height: 4.5vh;
+    width: 15%;
+  }
+
+  .buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 9%;
+    height: 2.4rem;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buscar:hover {
+    background: #009062;
+  }
+
+
+
+}
+
+
+
+/* responsive sesion4  */
+@media(max-width: 768px) {
+  /* responsive sesion4  */
+
+  /* sesion4 es la del rankig */
+  .sesion4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .sesion4 h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .img_ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+  }
+
+  .img2 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ranking1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 29%;
+    height: 31vh;
+    background-color: #1b2549;
+    border-radius: 20px;
+    margin-top: 3%;
+
+  }
+
+  .ranking1 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+  }
+
+  .num_ranking {
+    width: 29%;
+    height: 5.1vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 23.3%;
+  }
+
+  .num_ranking h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #cfcfcf;
+  }
+
+  .num_ranking .img1 {
+    width: 30PX;
+  }
+
+  .num_ranking .img2 {
+    width: 90PX;
+  }
+
+  .ranking_4_5_6 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+
+}
+
+@media(max-width: 768px) {}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+  background-color: #e2e2e2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #1B2549;
+  color: white;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.inicio_sesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25vw;
+  min-width: 150px;
+}
+
+.inicio_sesion #inicio,
+.inicio_sesion #unirse {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.inicio_sesion #inicio img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.3rem;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  min-width: 120px;
+}
+
+.redes img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.redes .x {
+  width: 1.8rem;
+  height: 1.6rem;
+}
+
+
+.menu {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+}
+
+.menu a {
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1B2549;
+  width: 200px;
+  height: 50PX;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #1B2549;
+  background-color: aliceblue;
+  transition: 3s;
+
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+
+  cursor: pointer;
+  display: none;
+  transition: 0.5s;
+}
+
+.mostrar-menu {
+  order: 1;
+
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #6cc091;
+  text-decoration: underline;
+
+
+}
+
+#check {
+  display: none;
+}
+
+/* contenedor de la pagina */
+.contenedor_principal {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(img/FONDO\ INDEX.png);
+  background-size: cover;
+  background-image: 100%;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* menu que esta en de busqueda de vuelos en la parte principal */
+.menu_mayor {
+  position: absolute;
+
+margin-top: 0; 
+ left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu1 {
+  display: flex;
+  align-items: center;
+  width: 99.6%;
+  height: 7vh;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 2rem;
+  padding: 1px;
+  border: 2px black solid;
+  background-color: #d9d9d9;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.items_todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 39%;
+}
+
+.items_todos a {
+  text-decoration: none;
+  color: black;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 1.3vw;
+
+  animation: ease-in;
+  border-bottom: 3px solid transparent;
+}
+
+.items img {
+  width: 20%;
+  height: 10%;
+}
+
+.items.active:hover {
+  border-bottom: 2.4px solid rgb(0, 0, 0);
+  /* font-weight: 680; */
+}
+
+.items:hover {
+  border-bottom: 2.4px solid rgb(0, 0, 0);
+  /* font-weight: 680; */
+  transition: 0.5s;
+}
+
+.items:not(hover) {
+  transition: 1s;
+}
+
+#busqueda {
+  background: #f6eeee;
+  padding: 20px;
+  width: 90vw;
+  height: 17vh;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.busquedas.active {
+  display: block;
+}
+
+.busquedas {
+  display: none;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 15px;
+  width: 40%;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.formulario input,
+.formulario select {
+  padding: 8px;
+  width: 5%;
+  border: 1px black solid;
+
+  height: 2rem;
+  font-size: 16px;
+
+  border-radius: 5px;
+}
+
+.formulario .date {
+  height: 4.5vh;
+  width: 18%;
+}
+
+.buscar {
+  background: #1b2549;
+  color: white;
+  border: none;
+  width: 8%;
+  height: 3rem;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buscar:hover {
+  background: #009062;
+}
+
+
+/* sesion3 vuelos populares*/
+.sesion3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.contenedor_sesion3 {
+  display: flex;
+  width: 90vw;
+  height: 100%;
+  border: 7px black solid;
+  border-radius: 0px;
+  position: relative;
+  /* flex-direction: column; */
+}
+
+.contenedor_bogota_cartagena {
+  display: flex;
+  flex-direction: column;
+  width: 40.5%;
+  height: 100%;
+  /* background-color: #009062; */
+  position: relative;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imgbogota {
+  width: 96%;
+  height: 100%;
+
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.imgbogota2 {
+  width: 96%;
+  height: 100%;
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.imgbogota2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgbogota img {
+  width: 100%;
+  height: 100%;
+}
+
+#relleno {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+
+  /* opacity: 50%; */
+  top: 72.7%;
+  position: absolute;
+}
+
+.cop {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.txt_cop {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin: 12px;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt_cop p {
+  font-weight: bold;
+  color: #2a2929;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtValor {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 30px;
+  font-size: 1.5rem;
+}
+
+.sesion-3 {
+  display: none;
+  flex-direction: column;
+  gap: 2.1rem;
+  background-color: #1b2549;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.sesion-3 h1 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 0%;
+}
+
+.contenedor-1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2.1rem;
+
+}
+
+.contenedor_img {
+  display: flex;
+  width: 25%;
+  height: 53vh;
+  background-image: url(img/bogotasesio3.png);
+  background-size: 100%;
+  background-size: cover;
+  align-items: end;
+
+}
+.contenedor_img1 {
+  display: flex;
+  width: 25%;
+  height: 53vh;
+  background-image: url(img/cartagena.png);
+  background-size: 100%;
+  background-size: cover;
+  align-items: end;
+
+}
+.contenedor_img2 {
+  display: flex;
+  width: 25%;
+  height: 53vh;
+  background-image: url(img/pamplona.png);
+  background-size: 100%;
+  background-size: cover;
+  align-items: end;
+
+}
+.contenedor_img3 {
+  display: flex;
+  width: 25%;
+  height: 53vh;
+  background-image: url(img/medelli_bogota.svg);
+  background-size: 100%;
+  background-size: cover;
+  align-items: end;
+
+}
+
+.contenedor_sombra {
+  display: flex;
+  width: 100%;
+  height: 18vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 69%;
+  background-color: #00000098;
+}
+
+.cotenedor_blanco {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  height: 70%;
+}
+
+.contenido_izq {
+
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+}
+
+.contenido_izq h1 {
+  text-decoration: none;
+  margin: 0;
+  padding: 0%;
+  font-size: 20px;
+}
+
+.contenido_izq p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0%;
+  font-size: 15px;
+
+}
+
+.contenido_der {
+  display: flex;
+  height: 100%;
+  margin: 0%;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+.contenido_der img {
+  margin: 0%;
+  width: 120px;
+}
+
+.contenido_der p {
+  margin: 0%;
+  font-size: 20px;
+}
+
+/* aca finaliza la primera sesion  */
+.botones_sesio3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  background-color: #e2e2e2;
+  justify-content: space-evenly;
+  background-color: cfcfcf;
+  border: black solid 7px;
+  margin-left: 40.5%;
+  top: -6px;
+  border-top: none;
+  border-right: none;
+  width: 59.5%;
+  height: 8.8%;
+}
+
+.botones_sesio3 button {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 9vh;
+  background-color: #1b2549;
+  border: 4px black solid;
+  border-radius: 10px;
+  color: #d9d9d9;
+  font-size: 2rem;
+}
+
+.santa_medallo {
+  margin-top: 7%;
+  display: flex;
+  width: 59.5%;
+  flex-direction: column;
+  gap: 1.5%;
+  height: 113.5vh;
+}
+
+.contenedor_santa_medellin {
+  display: flex;
+
+  width: 100%;
+  height: 55.5vh;
+  gap: 15px;
+}
+
+.img_santa_marta {
+  width: 48.6%;
+  height: 100%;
+  position: relative;
+}
+
+.img_santa_marta img {
+  width: 100%;
+  height: 100%;
+}
+
+#relleno_santa_marta {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+
+  /* opacity: 50%; */
+  top: 73%;
+  position: absolute;
+}
+
+.cop_santa_marta {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.cop_santa_marta h1 {
+  font-size: rem;
+  color: #2a2929;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.txt_cop_santa_marta {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin: 12px;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt_cop_santa_marta p {
+  font-weight: bold;
+  color: #2a2929;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtValor_santa_marta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+.contenedor_pamplona_palomino {
+  display: flex;
+  gap: 1.5%;
+  height: 100%;
+}
+
+.img_pamplona {
+  width: 48.6%;
+  height: 93.5%;
+  position: relative;
+}
+
+.img_pamplona img {
+  width: 100%;
+  height: 100%;
+}
+
+#relleno_pamplona {
+  display: flex;
+  width: 100%;
+  height: 27%;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000067;
+  top: 73%;
+  position: absolute;
+}
+
+.cop_pamplona {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.txt_cop_pamplona {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  margin: 12px;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.txt_cop_pamplona p {
+  font-weight: bold;
+  color: #2a2929;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtValor_pamplona {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+/* sesion4 es la del rankig */
+.sesion4 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+
+
+
+}
+
+.sesion4 h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.img_ranking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 98%;
+  height: 80%;
+  height: auto;
+  position: relative;
+}
+
+.ranking1 {
+
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 29%;
+  height: 50vh;
+  background-color: #1b2549;
+  border-radius: 20px;
+
+  margin-top: 3%;
+
+}
+
+.ranking1 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+.num_ranking {
+  width: 29%;
+  height: 5.1vh;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 19.9%;
+}
+
+.num_ranking h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7rem;
+  color: #cfcfcf;
+}
+
+.num_ranking .img1 {
+  width: 60PX;
+}
+
+.num_ranking .img2 {
+  width: 150PX;
+}
+
+.ranking_4_5_6 {
+  display: flex;
+  width: 98%;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/* sesion 5 la de los paquetes */
+
+.sesion5 {
+  display: flex;
+  width: 100%;
+  height: 66.61vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+.sesion5 h1 {
+  text-align: center;
+  font-size: 3.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.paquetes {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  justify-content: space-between;
+  width: 87%;
+  height: 100%;
+}
+
+.hotel_comida_carro {
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: 28.2%;
+  height: 100%;
+  justify-content: space-evenly;
+  background-color: transparent;
+  border: #1b2549 solid 3px;
+
+}
+
+.hotel_comida_carro:hover {
+  background-color: #1b2549;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.hotel_comida_carro img {
+  width: 60.1%;
+  height: 57%;
+  border-radius: 20px;
+
+}
+
+.hotel_comida_carro p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+
+/* sesio 6 la de las  informacion de la mascota */
+.sesion6 {
+
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: 635px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.sesion6 img {
+  width: 100%;
+  height: auto;
+
+}
+
+.texto_boton {
+  display: flex;
+  width: 65%;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #b1393900;
+  align-items: center;
+  position: absolute;
+}
+
+.texto_boton h1 {
+  color: #1b2549;
+  font-size: 4vw;
+
+}
+
+.texto_boton p {
+  text-align: center;
+  color: #2a2929;
+  font-size: 1vw;
+
+}
+
+.btn_infor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  width: 20%;
+  height: 15%;
+  border-radius: 15px;
+  border: #1b2549 solid 2px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.btn_infor:hover {
+  background: #ecf0ff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1b2549;
+  color: #b6b6b6;
+  height: 50vh;
+  margin-top: 2.2rem;
+
+}
+
+footer a {
+  color: #b6b6b6;
+}
+
+.imgFooter img {
+  width: 2vw;
+
+}
+
+.imgFooter {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoFooter {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+
+  /* header */
+
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%;
+    justify-content: space-around;
+    width: 40vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: none;
+
+  }
+
+  .redes img {
+    display: none;
+
+  }
+
+  .redes .x {
+    display: none;
+
+  }
+
+
+  /* menu de hamburguesa */
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 26%;
+    height: 100vh;
+    background-color: #1B2549;
+    right: -100%;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+
+    display: flex;
+    border: none;
+    align-items: center;
+    background: none;
+    color: aliceblue;
+  }
+
+  .mostrar-menu {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1000;
+    top: 56px;
+    position: fixed;
+    right: 50px;
+  }
+
+  .esconder-menu {
+    z-index: 1000;
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  #check:checked~.menu {
+
+    right: 0;
+  }
+}
+
+
+/* responsive */
+@media(max-width: 768px) {
+
+  /* menu que esta en de busqueda de vuelos en la parte principal */
+  .menu_mayor {
+    position: absolute;
+    top: 79vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+
+  .menu1 {
+    display: flex;
+    align-items: center;
+    width: 99.6%;
+    height: 7vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    padding: 1px;
+    border: 2px black solid;
+    background-color: #d9d9d9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .items_todos a {
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+
+    font-size: 2vw;
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+  }
+
+  .items img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+  }
+
+  .items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+
+  }
+
+  .items:not(hover) {
+    transition: 1s;
+  }
+
+  #busqueda {
+
+    background: #f6eeee;
+    padding: 20px;
+    width: 90vw;
+    height: 17vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .busquedas.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .busquedas {
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+  }
+
+  .opciones label {
+    color: black;
+    font-size: 0.8rem;
+  }
+
+  .opciones select {
+    padding: 5px;
+    width: 20%;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .formulario input {
+    padding: 8px;
+    width: 4%;
+    border: 1px black solid;
+    height: 2rem;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  .formulario .number {
+    height: 22px;
+
+  }
+
+  .formulario .date {
+    height: 4.5vh;
+    width: 15%;
+  }
+
+  .buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 9%;
+    height: 2.4rem;
+    padding: 10px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buscar:hover {
+    background: #009062;
+  }
+
+
+
+}
+
+/* responsive sesion3 */
+@media(max-width: 768px) {
+  .sesion3 {
+    display: none;
+  }
+
+  .sesion-3 {
+    display: block;
+    margin-top: 2.1rem;
+    width: 100%;
+    background-color: #e2e2e2;
+    display: flex;
+  }
+
+  .sesion-3 h1 {
+    font-size: 170%;
+  }
+
+  .contenedor-1 {
+    width: 100%;
+  }
+
+  .contenedor_img {
+    width: 45%;
+    height: 43vh;
+
+
+  }
+
+  .contenedor_sombra {
+    height: 14vh;
+  }
+
+  .contenido_izq h1 {
+    font-size: 130%;
+  }
+
+  .contenido_izq p {
+    font-size: 90%;
+  }
+
+  .contenido_der p {
+    font-size: 110%;
+  }
+}
+
+/* termina el responsive de la sesion3 cabe aclarar que en el css hice dos sesiones 3 la del responsive es la ultima */
+
+
+
+
+/* responsive sesion4  */
+@media(max-width: 768px) {
+  /* responsive sesion4  */
+
+  /* sesion4 es la del rankig */
+  .sesion4 {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .sesion4 h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .img_ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+  }
+
+  .img2 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ranking1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 29%;
+    height: 31vh;
+    background-color: #1b2549;
+    border-radius: 20px;
+    margin-top: 3%;
+
+  }
+
+  .ranking1 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+  }
+
+  .num_ranking {
+    width: 29%;
+    height: 5.1vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 23.3%;
+  }
+
+  .num_ranking h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #cfcfcf;
+  }
+
+  .num_ranking .img1 {
+    width: 30PX;
+  }
+
+  .num_ranking .img2 {
+    width: 90PX;
+  }
+
+  .ranking_4_5_6 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+
+}
+
+
+/* rsponsive de la sesion 5 la de los servicios y paquetes */
+@media(max-width: 768px) {
+
+
+
+  /* sesion 5 la de los paquetes */
+
+  .sesion5 {
+    display: flex;
+    width: 100%;
+    height: 40.61vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+  }
+
+  .sesion5 h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .paquetes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: space-between;
+    width: 87%;
+    height: 100%;
+  }
+
+  .hotel_comida_carro {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    width: 28.2%;
+    height: 100%;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border: #1b2549 solid 3px;
+
+  }
+
+  .hotel_comida_carro:hover {
+    background-color: #1b2549;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  .hotel_comida_carro img {
+    width: 70.1%;
+    height: 57%;
+    border-radius: 20px;
+
+  }
+
+  .hotel_comida_carro p {
+    text-align: center;
+    font-size: 0.8rem;
+
+  }
+
+
+}
+
+/* responsive de la sesion 6 de la mascota */
+@media (max-width:768px) {
+
+  /* sesio 6 la de las  informacion de la mascota */
+  .sesion6 {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+
+
+  }
+
+  .sesion6 img {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .texto_boton {
+    display: flex;
+    width: 65%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #b1393900;
+    align-items: center;
+    position: absolute;
+  }
+
+  .texto_boton h1 {
+    color: #1b2549;
+    font-size: 4vw;
+
+  }
+
+  .texto_boton p {
+    text-align: center;
+    color: #2a2929;
+    font-size: 1.7vw;
+
+  }
+
+  .btn_infor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    width: 40%;
+    height: 20%;
+    border-radius: 15px;
+    border: #1b2549 solid 2px;
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  .btn_infor:hover {
+    background: #ecf0ff;
+  }
+}
+
+/* termina el responsive de la sesion6 */
+
+
+/* PIE DE PAGINA */
+@media(max-width: 768px) {
+
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 40vh;
+
+  }
+
+  footer a {
+    color: #b6b6b6;
+    text-decoration: none;
+  }
+
+  .imgFooter img {
+    width: 2vw;
+
+  }
+
+  .imgFooter {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .infoFooter {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3vw;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+/* menu celular */
+
+@media(max-width: 425px) {
+
+
+  /* header */
+
+header{
+  height: 100px;
+}
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%;
+    justify-content: space-around;
+    width: 50vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: none;
+
+  }
+
+  .redes img {
+    display: none;
+
+  }
+
+  .redes .x {
+    display: none;
+
+  }
+
+
+  /* menu de hamburguesa */
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1B2549;
+    right: -100%;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 0px 0px;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+
+    display: flex;
+    border: none;
+    align-items: center;
+    background: none;
+    color: aliceblue;
+  }
+
+  .mostrar-menu {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1000;
+    top: 30px;
+    position: fixed;
+    right: 30px;
+  }
+
+  .esconder-menu {
+    z-index: 1000;
+    color: aliceblue;
+    position: absolute;
+    top: 40px;
+    right: 59px;
+  }
+
+  #check:checked~.menu {
+
+    right: 0;
+  }
+}
+
+
+/* menu de reserva de vuelos */
+@media(max-width: 425px) {
+
+  .contenedor_principal{
+  height: 30vh;
+  background: none;
+  }
+  /* menu que esta en de busqueda de vuelos en la parte principal */
+  .menu_mayor {
+    display: none;
+    position: absolute;
+    top: 59vh;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+
+  .menu1 {
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 24vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    border:0;
+    background-color:transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .items_todos a {
+    text-decoration: none;
+    color: black;
+    background-color: #009062 ;
+
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+
+    font-size: 4vw;
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+  }
+
+  .items img {
+    width: 10%;
+    height: 10%;
+  }
+
+  .items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+  }
+
+  .items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+
+  }
+
+  .items:not(hover) {
+    transition: 1s;
+  }
+
+  #busqueda {
+display: flex;
+    background: #f6eeee;
+    width:90%;
+    justify-content: space-evenly ;
+    height: 85vh;
+    box-shadow: 0;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border: 0;
+  }
+
+  .busquedas.active {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;height: 100%;
+    flex-direction: column;
+  }
+
+  .busquedas {
+    /* display: none; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+
+
+  }
+
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+  align-items: flex-start;
+    width: 100%;
+  }
+
+  .opciones label {
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .opciones select {
+    padding: 0px;
+    width: 100%;
+    display: none;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+     width: 100%;
+  }
+
+  .formulario input {
+padding: 0;
+    width: 100%;
+    border: 2px black solid;
+    height: 2rem;
+    font-size: 15px;  
+    border-radius: 5px;
+  }
+
+  .formulario .number {
+    height: 50px;
+
+  }
+
+  .formulario .date {
+    height: 7vh;
+    width: 100%;
+  }
+
+  .buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3.3rem;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buscar:hover {
+    background: #009062;
+  }
+
+
+
+}
+
+
+/* responsive sesion3 */
+@media(max-width: 425px) {
+  .sesion3 {
+    display: none;
+  }
+
+  .sesion-3 {
+    display: block;
+    margin-top: 30rem;
+    width: 100%;
+    background-color: #e2e2e2;
+    display: flex;
+  }
+
+  .sesion-3 h1 {
+    font-size: 170%;
+  }
+
+  .contenedor-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contenedor_img {
+    width: 90%;
+    height: 43vh;
+
+
+  }
+
+    .contenedor_img1 {
+    width: 90%;
+    height: 43vh;
+
+
+  }
+  .contenedor_img2 {
+    width: 90%;
+    height: 43vh;
+
+
+  }
+
+    .contenedor_img3 {
+    width: 90%;
+    height: 43vh;
+
+
+  }
+
+
+
+  .contenedor_sombra {
+    height: 14vh;
+  }
+
+  .contenido_izq h1 {
+    font-size: 130%;
+  }
+
+  .contenido_izq p {
+    font-size: 90%;
+  }
+
+  .contenido_der p {
+    font-size: 110%;
+  }
+}
+
+/* termina el responsive de la sesion3 cabe aclarar que en el css hice dos sesiones 3 la del responsive es la ultima */
+
+
+/* responsive de movil para rankink */
+@media(max-width: 425px) {
+  /* responsive sesion4  */
+
+  /* sesion4 es la del rankig */
+  .sesion4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .sesion4 h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .img_ranking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  .img2 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ranking1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 40vh;
+    background-color: #1b2549;
+    border-radius: 20px;
+    margin-top: 2rem;
+
+  }
+
+  .ranking1 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 32vh;
+    position: relative;
+  }
+
+  .num_ranking {
+    width: 100%;
+    height: 5.1vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:56%;
+  }
+
+  .num_ranking h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #cfcfcf;
+  }
+
+  .num_ranking .img1 {
+    width: 40PX;
+  }
+
+  .num_ranking .img2 {
+    width: 130PX;
+  }
+
+  .ranking_4_5_6 {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+  }
+
+
+}
+
+
+/* responsive de los paquetes  */
+@media(max-width: 425px) {
+
+
+
+  /* sesion 5 la de los paquetes */
+
+  .sesion5 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+
+  }
+
+  .sesion5 h1 {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .paquetes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hotel_comida_carro {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    width: 80%;
+    height: 30%;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border: #1b2549 solid 3px;
+
+  }
+
+  .hotel_comida_carro:hover {
+    background-color: #1b2549;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  .hotel_comida_carro img {
+    width: 50%;
+    height: 65%;
+    border-radius: 20px;
+
+  }
+
+  .hotel_comida_carro p {
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+
+
+}
+
+
+
+/* responsive de la sesion 6 de la mascota celular */
+@media (max-width:425px) {
+  
+
+  /* sesio 6 la de las  informacion de la mascota */
+  .sesion6 {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+
+
+  }
+
+  .sesion6 img {
+    width: 100vw;
+    
+    height: auto;
+
+  }
+
+  .texto_boton {
+    display: flex;
+    width:100%;
+    margin: 0;
+    height: 60%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    background-image: none;
+    align-items: start;
+  }
+
+  .texto_boton h1 {
+    color: #1b2549;
+    font-size: 4vw;
+    margin-left: 10px;
+
+  }
+
+  .texto_boton p {
+    text-align: center;
+    color: #2a2929;
+    margin-left: 20px;
+    font-size: 2vw;
+
+  }
+
+  .btn_infor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 55px;
+    font-size: 13px;
+    width: 35%;
+    height:40px;
+    border-radius: 15px;
+    border: #1b2549 solid 2px;
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  .btn_infor:hover {
+    background: #ecf0ff;
+  }
+}
+
+/* termina el responsive de la sesion6 */
+
+/* PIE DE PAGINA */
+@media(max-width: 425px) {
+
+  footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+width: 100%;
+flex-direction: column;
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 70vh;
+
+  }
+
+  footer a {
+    color: #b6b6b6;
+    text-decoration: none;
+  }
+
+  .imgFooter img {
+    width: 6vw;
+
+  }
+
+  .imgFooter {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .infoFooter {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vw;
+  }
+
+
+
+
+
+
+}

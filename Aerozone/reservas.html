@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reservas.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de vuelos </title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo de la empresa.png" alt="" class="logo">
+        <div class="inicio_sesion">
+            <a id="inicio" href=""><img src="img/PERSONA.png" alt="icon" width="48vw" height="48vh">INICIAR SESION</a>
+            <a id="unirse" href="">UNIRSE</a>
+        </div>
+
+        <div class="redes">
+            <img src="img/facebook.png" alt="">
+            <img src="img/youtube.png" alt="">
+            <img src="img/instagram.png" alt="">
+            <img class="x" src="img/x (1).png" alt="">
+        </div>
+
+    </header>
+    <div class="contenedor_principal">
+        <input type="checkbox" id="check">
+
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Reservas</a>
+            <a href="#">Ranking</a>
+            <a href="#">Servicios</a>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+
+        </nav>
+        <div class="menu_mayor">
+
+            <nav class="menu1">
+                <div class="items_todos">
+                    <a href="reservas.html">
+                        <div class="items active" data-target="vuelos"><img src="img/avion.png" alt=""> Vuelos
+                        </div>
+                    </a>
+                    <a href="paquetes.html">
+                        <div class="items" data-target="paquetes"><img src="img/palma.png" alt=""> Paquetes</div>
+                    </a>
+                    <a href="hotel.html">
+                        <div class="items" data-target="hoteles"><img src="img/hotel.png" alt=""> Hoteles</div>
+                    </a>
+                    <a href="seccion_carros.html">
+                        <div class="items" data-target="autos"><img src="img/carro.png" alt=""> Autos</div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+
+        <section id="busqueda">
+
+            <div class="busquedas active" id="vuelos">
+                <div class="opciones">
+                    <label><input type="radio" name="opcion-vuelo" checked>Ida y vuelta</label>
+                    <label><input type="radio" name="opcion-vuelo">Solo ida</label>
+                    <label><input type="radio" name="opcion-vuelo">Varias ciudades</label>
+                    <select name="tipo" id="personal">
+                        <option value="turista">Turista</option>
+                        <option value="">Ejecutivo</option>
+                    </select>
+
+                </div>
+
+                <div class="formulario">
+                    <input class="date" type="text" placeholder="¿De donde?">
+                    <input class="date" type="text" placeholder="¿A donde?">
+
+                    <input placeholder="fecha" type="date" class="date">
+                    <input placeholder="fecha" type="date" class="date">
+
+                    <input class="number" placeholder="number" type="number" min="1" value="1">
+                    <button class="buscar">Buscar</button>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+
+  
+
+
+    <div class="contenedor_titulomayor_">
+        <h1>Tu próxima aventura comienza aquí: ¡reserva tu vuelo ahora! </h1>
+        <p>Descubre el mundo con nuestras ofertas irresistibles.</p>
+    </div>
+    <div class="vuelos_center">
+        <div class="vuelos">
+            <div class="vuelo_sesion3">
+                <div class="img_vuelos">
+                    <img src="img/cartagena_new.svg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Cartagena - New York</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 1.430.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+            <div class="vuelo_sesion3">
+                <div class="img_vuelos">
+                    <img src="img/medelli_bogota.svg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Medellin - Bogota</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 150.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+            <div class="vuelo_sesion3" id="contenedor3">
+                <div class="img_vuelos">
+                    <img src="img/cartagena_hotel.jpg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Pamplona - New York</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 150.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="vuelos_center">
+        <div class="vuelos">
+            <div class="vuelo_sesion3">
+                <div class="img_vuelos">
+                    <img src="img/cartagena_medellin.jpg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Cartagena - Medellin</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 440.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+            <div class="vuelo_sesion3">
+                <div class="img_vuelos">
+                    <img src="img/bogota_san_andres.jpg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Bogota - San Andres</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 700.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+            <div class="vuelo_sesion3" id="contenedor3">
+                <div class="img_vuelos">
+                    <img src="img/bogota_francia.svg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Riohacha - Francia</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 1.200.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="vuelos_center">
+        <div class="vuelos">
+            <div class="vuelo_sesion3">
+                <div class="img_vuelos">
+                    <img src="img/cartagena_orlando.jpg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Cartagena - Orlando</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 750.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+            <div class="vuelo_sesion3">
+                <div class="img_vuelos">
+                    <img src="img/barranquila_medellin.svg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">barranquila - medellin</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 750.000</p>
+                        <p class="precio_pordia">Por trayecto</p>
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+
+            <div class="vuelo_sesion3" id="contenedor3">
+                <div class="img_vuelos">
+                    <img src="img/bogota_francia.svg" alt="Carro en garaje">
+                </div>
+                <div class="vuelo_contenido">
+                    <div class="calificacion_de_vuelo">
+                        <span class="pamplona">Bogota - Francia</span>
+                    </div>
+
+                </div>
+                <div id="precio_btn">
+                    <div class="precios_decripcion">
+                        <p class="precio_desde">Desde</p>
+                        <p class="precio">COP 190.000</p>
+                        <p class="precio_pordia">Por trayecto
+
+                    </div>
+                    <button class="btn_ver_mas">ver más</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="infoFooter">
+            <h1>Aerolinea Aerozone</h1>
+            <p>Llevandote a tu destino con comodidad y confianza</p>
+            <p>Descubre el mundo con nosotros.</p>
+        </div>
+
+        <div class="infoFooter">
+            <h1 id="enlaces">Enlaces rápidos</h1>
+            <a href="index.html">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Contactanos</a>
+        </div>
+
+        <div class="infoFooter">
+            <h1>Contáctanos</h1>
+            <p>Teléfono: +57 323 813 4059</p>
+            <p>Correo:areozone@contac.com</p>
+            <div class="imgFooter">
+                <img src="img/youtube.png" alt="">
+                <img src="img/facebook.png" alt="">
+                <img src="img/instagram.png" alt="">
+                <img src="img/x (1).png" alt="">
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
