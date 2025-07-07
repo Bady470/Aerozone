@@ -32,19 +32,44 @@
         </label>
 
         <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Reservas</a>
-            <a href="#">Ranking</a>
-            <a href="#">Servicios</a>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
+            <a href="indexA.html">Inicio</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="indexA.html">Ranking</a>
+            <a href="indexA.html">Servicios</a>
+            <a href="quienes_somos.html">Nosotros</a>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
 
         </nav>
-    </div>
+        
+ <!-- ventana emergente del incio de sesion -->
+       
 
+            <div class="contenedor-padre" id="ventanaInicio">
+                <a id="cerrar" href=""><img class="cerrar" src="img/x-sesion.svg" alt=""></a>
+                <img class="logo-inicio" src="img/logo empresa 2.svg" alt="">
+                <div class="usuario"><img src="img/muñeco-inicio.svg" alt=""><input type="text"
+                        placeholder="ingrese su usuario"></div>
+                <div class="contraseña"><img src="img/candado-sesion.svg" alt=""><input type="password"
+                        placeholder="ingrese su contraseña"></div>
+
+                <a id="inicio" class="btnIniciarsesion" href="">Iniciar sesion</a>
+                <div class="olvido-contra">
+                    <a href="">Olvidastes tu contraseña?</a>
+                    <a href="">Registrarse</a>
+
+                </div>
+
+
+            </div>
+
+     
+        <!-- termina la ventana emergente -->
+        
+       
+
+    </div>
     <div class="contenedor-info-vuelo">
         <div class="titulo-sesion1">
             <img src="img/avion.png" alt="">
@@ -341,6 +366,35 @@
 
         </div>
     </footer>
-</body>
+    
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-</html>
+        // Obtener los elementos
+        let iniciar = document.getElementById("inicio");
+        let ventanaInicio = document.getElementById("ventanaInicio");
+        let cerrar = document.getElementById("cerrar");
+
+let body =document.getElementById("Body");
+
+        // Agregar eventos si los elementos existen
+        if (iniciar && ventanaInicio && cerrar) {
+            iniciar.addEventListener("click", function (e) {
+                e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+                console.log("Botón de inicio clickeado.");
+                ventanaInicio.style.display = "flex"; // Mostrar la ventana
+                document.body.style.overflow="hidden";
+
+
+            });
+
+
+            cerrar.addEventListener("click", function (e) {
+                e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+                console.log("Botón de cerrar clickeado.");
+                ventanaInicio.style.display = "none"; // Ocultar la ventana
+                document.body.style.overflow="";
+            });
+        }
+    });
+</script>

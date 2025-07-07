@@ -140,6 +140,130 @@ header {
 
 }
 
+
+/* ventanas emeergente */
+
+
+
+/* ventana de incio de sesion */
+
+
+.cerrar {
+  position: absolute;
+  right: 40px;
+
+
+}
+
+.contenedor-padre {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 32vw;
+  height: 80vh; 
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+}
+
+.contenedor-padre .logo-inicio {
+  width: 10vw;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+
+}
+
+.usuario img {
+  width: 5vw;
+  position: absolute;
+  margin-left: -4px;
+}
+
+.usuario input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  height: 8vh;
+  font-size: 1vw;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+}
+
+.contraseña {
+  display: flex;
+  align-items: center;
+
+}
+
+.contraseña img {
+  width: 5vw;
+  position: absolute;
+  margin-left: 20.5vw;
+}
+
+.contraseña input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+  text-align: center;
+  height: 8vh;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+}
+
+.btnIniciarsesion {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.7vw;
+  width: 25vw;
+  background-color: #1b2549;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+
+
+
+.olvido-contra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  justify-content: space-between;
+
+}
+
+.olvido-contra a {
+  text-decoration: none;
+  color: white;
+}
+
+/* termina la ventana de incio de sesion  */
+
+
+
+
 .contenedor-info-vuelo {
     display: flex;
     flex-direction: column;
@@ -608,6 +732,7 @@ footer a {
     }
 }
 
+
 /* responisve de la informacion de las fechas  */
 @media(max-width: 768px) {
 
@@ -770,7 +895,7 @@ footer a {
 
 
     }
- 
+
 
     .btn-vuelo-directo {
         display: flex;
@@ -785,7 +910,7 @@ footer a {
         text-decoration: none;
     }
 
-    
+
 
     .btn-vuelo-directo:hover {
         background-color: #243265;
@@ -800,6 +925,126 @@ footer a {
 
 
 }
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:768px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 65vw;
+    height: 75vh;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 17vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 9vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 2vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 9vw;
+    position: absolute;
+    margin-left: 36.5vw;
+  }
+
+  .contraseña input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 2vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 45vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
 
 
 
@@ -888,7 +1133,7 @@ footer a {
         border-radius: 0;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
-        background-color: #E3E3E3;
+        background-color: #bdbdbd;
         height: 20vh;
     }
 
@@ -1013,25 +1258,927 @@ footer a {
 
 
 
-
-
-
-
-
-
 /* PIE DE PAGINA */
 @media(max-width: 768px) {
 
 
-    footer {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 40vh;
+
+  }
+
+  footer a {
+    color: #b6b6b6;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .imgFooter img {
+    width: 3vw;
+
+  }
+
+  .imgFooter {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .infoFooter {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vw;
+  }
+  .infoFooter p{
+    font-size: 12px;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+/* responisve para cellar */
+
+/* menu  */
+
+@media(max-width: 425px) {
+
+    /* header */
+
+    header {
+        height: 100px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .inicio_sesion {
         display: flex;
+        align-items: center;
+        position: absolute;
+        margin-left: 30%;
         justify-content: space-around;
+        width: 50vw;
+        min-width: 150px;
+    }
+
+    .inicio_sesion #inicio,
+    .inicio_sesion #unirse {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffff;
+        font-size: 0.7rem;
+        margin: 0 0.5rem;
+    }
+
+    .inicio_sesion #inicio img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.3rem;
+    }
+
+    .redes {
+        display: none;
+
+    }
+
+    .redes img {
+        display: none;
+
+    }
+
+    .redes .x {
+        display: none;
+
+    }
+
+
+    /* menu de hamburguesa */
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #1B2549;
+        right: -100%;
+        flex-direction: column;
+        top: 0;
+        text-align: center;
+        padding: 0px 0px;
+        z-index: 1000;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+
+        display: flex;
+        border: none;
+        align-items: center;
+        background: none;
+        color: aliceblue;
+    }
+
+    .mostrar-menu {
+        color: aliceblue;
+        position: absolute;
+        z-index: 1000;
+        top: 30px;
+        position: fixed;
+        right: 35px;
+    }
+
+    .esconder-menu {
+        z-index: 1000;
+        color: aliceblue;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+    }
+
+
+    #check:checked~.menu {
+
+        right: 0;
+    }
+}
+
+
+/* menu de reserva de vuelos */
+@media(max-width: 425px) {
+
+  .contenedor_principal {
+    height: vh;
+    /* background-image: url(); */
+  }
+
+  /* menu que esta en de busqueda de vuelos en la parte principal */
+  .menu_mayor {
+    display: none;
+    position: absolute;
+    top: 59vh;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu1 {
+    display: none;
+    align-items: center;
+    width: 100%;
+
+    height: 24vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    border: 0;
+    background-color: transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .items_todos a {
+    text-decoration: none;
+    color: black;
+    background-color: #009062;
+
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+
+    font-size: 4vw;
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+  }
+
+  .items img {
+    width: 10%;
+    height: 10%;
+  }
+
+  .items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+  }
+
+  .items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+
+  }
+
+  .items:not(hover) {
+    transition: 1s;
+  }
+
+  #busqueda {
+    display: flex;
+    background: #000000b1;
+    width: 70%;
+    justify-content: space-evenly;
+    height: 68vh;
+    box-shadow: 0;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border: 0;
+  }
+
+  .busquedas.active {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 104%;
+    flex-direction: column;
+  }
+
+  .busquedas {
+    /* display: none; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+
+
+  }
+
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .opciones label {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+
+    font-size: 1rem;
+
+  }
+
+  .ciudades {
+    width: 75px;
+  }
+
+  .opciones select {
+    padding: 0px;
+    width: 100%;
+    display: none;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    height: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formulario input {
+    padding: 0;
+
+    width: 100%;
+    border: 2px black solid;
+    height: 2rem;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+
+  .formulario .number {
+    height: 50px;
+
+  }
+
+  .formulario .date {
+    height: 7vh;
+    width: 100%;
+  }
+
+  .buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3.3rem;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buscar:hover {
+    background: #009062;
+  }
+
+
+
+}
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:425px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 30vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 16vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 4vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 16vw;
+    position: absolute;
+    margin-left: 66vw;
+  }
+
+  .contraseña input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 4vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 4vw;
+    width: 80vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
+
+/* responisve de la informacion de las fechas  */
+@media(max-width: 425px) {
+
+    .contenedor-info-vuelo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titulo-sesion1 {
+        display: flex;
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+        padding: 0 0px;
+        gap: 10px;
+    }
+
+    .titulo-sesion1 h1 {
+        font-size: 20px;
+    }
+
+    .titulo-sesion1 img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-vuelos {
+        display: flex;
+        gap: 8px;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    @keyframes float {
+        0% {
+            transform: translatex(0px);
+        }
+
+        50% {
+            transform: translateY(-5px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .flecha {
+
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .flecha img {
+        width: 13px;
+    }
+
+    /* le damos diseños a los vuelos  */
+    .menu-vuelos .vuelos {
+        display: flex;
+        width: 18vw;
+        text-decoration: none;
+        border: solid rgb(62, 62, 62) 3px;
+        border-bottom: none;
+        color: #1B2549;
+        text-align: center;
+        flex-direction: column;
+        gap: 1vh;
+        justify-content: center;
+        border-top: none;
+        border-left: none;
+        height: 9vh;
+
+    }
+
+    .menu-vuelos .vuelo1 {
+        display: none;
+        width: 15vw;
+        text-decoration: none;
+        border: solid rgb(62, 62, 62) 3px;
+        border-bottom: none;
+        color: #1B2549;
+        text-align: center;
+        flex-direction: column;
+        gap: 1vh;
+        justify-content: center;
+        border-top: none;
+        border-left: none;
+        height: 9vh;
+
+    }
+
+
+    /* texto de los vuelos y dias disponibles */
+    .menu-vuelos .vuelos h1,
+    .vuelo1 h1 {
+        font-size: 2.8vw;
+
+    }
+
+
+    .menu-vuelos .vuelos p,
+    .vuelo1 p {
+        font-size: 2.5vw;
+    }
+
+
+    .menu-vuelos .vuelos:hover,
+    .vuelo1:hover {
+        height: 12vh;
+        border-radius: 10px;
+        background-color: #ffffff;
+        border: solid #1B2549;
+    }
+
+    .vuelos-predeterminados {
+        display: flex;
+        width: 100%;
+    }
+
+    .filtro-vuelo {
+        display: flex;
+        gap: 20px;
+    }
+
+    .filtro-vuelo h1 {
+        padding: 0 20px;
+        padding-right: 0;
+        font-size: 20px;
+
+    }
+
+    .btn-mejor-precio {
+        display: flex;
+        background-color: #1B2549;
+        width: 25vw;
+        height: 5vh;
+        color: white;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 2.5vw;
+        text-decoration: none;
+    }
+
+    .btn-max {
+        display: flex;
+        width: 3vw;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: normal;
+        border-radius: 100%;
+        height: 1.5vh;
+        border: solid 2px;
+
+
+    }
+
+
+    .btn-vuelo-directo {
+        display: flex;
+        background-color: #1B2549;
+        width: 25vw;
+        height: 5vh;
+        color: white;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 2.5vw;
+        text-decoration: none;
+    }
+
+
+
+    .btn-vuelo-directo:hover {
+        background-color: #243265;
+    }
+
+    .btn-mejor-precio:hover {
+        background-color: #243265;
+    }
+
+
+
+
+
+}
+
+
+
+
+/* responsive de los vuelos disponibles */
+@media(max-width:425px) {
+
+
+    /* diseño de los vuelos predeterminados */
+    .contenedor-vuelos-predeterminados {
+
+        display: flex;
+        width: 100%;
+
+        flex-direction: column;
+        gap: 2.1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.1rem;
+
+    }
+
+    .prede1 {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    .contenedor-blanco {
+        display: flex;
+        border-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #ffffff;
+        height: 15vh;
+
+
+    }
+.contenedor-blanco h1{
+    font-size: 20px;
+}
+    .contenedor-blanco img {
+        margin-top: 20px;
+        width: 35px;
+        transform: rotate(90deg);
+        height: 35px;
+
+    }
+
+    .lineas {
+        font-size: 0px;
+
+    }
+
+    .hora-salida {
+        display: flex;
+        flex-direction: column;
+        margin-top:20px;
+        gap: 15px;
+
+
+
+    }
+
+    .avion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contenedor-gris {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background-color: #bdbdbd;
+        height: 15vh;
+    }
+.contenedor-gris p{
+    margin-top: px;
+}
+
+    .contenedor-gris h1{
+        font-size: 20px;
+    }
+    .btn-mejor-precio1 {
+        display: flex;
+        background-color: #1B2549;
+        width: 30vw;
+        height: 4vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 51.5%;
+        left: 17%;
+        font-size: 2.3vw;
+        text-decoration: none;
+        border-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio2 {
+        display: flex;
+        background-color: #1B2549;
+        width: 30vw;
+        height: 4vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 86%;
+        left: 17%;
+        font-size: 2.3vw;
+        text-decoration: none;
+        border-radius: 0;
+
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio3 {
+       display: flex;
+        background-color: #1B2549;
+        width: 30vw;
+        height: 4vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 120.9%;
+        left: 17%;
+        font-size: 2.3vw;
+        text-decoration: none;
+        border-radius: 0;
+
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio4 {
+       display: flex;
+        background-color: #1B2549;
+        width: 30vw;
+        height: 4vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 155.6%;
+        left: 17%;
+        font-size: 2.3vw;
+        text-decoration: none;
+        border-radius: 0;
+
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .btn-mejor-precio5 {
+        display: flex;
+        background-color: #1B2549;
+        width: 30vw;
+        height: 4vh;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 190.2%;
+        left: 17%;
+        font-size: 2.3vw;
+        text-decoration: none;
+        border-radius: 0;
+
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .info-cop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0%;
+
+    }
+
+    .precio {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    .precio p {
+        text-align: center;
+
+    }
+
+
+
+
+}
+
+
+/* PIE DE PAGINA */
+@media(max-width: 425px) {
+
+    footer {
+        margin-top:2rem;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
-        margin-top: 2.1rem;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
         background-color: #1b2549;
         color: #b6b6b6;
-        height: 40vh;
+        height: 70vh;
 
     }
 
@@ -1041,7 +2188,7 @@ footer a {
     }
 
     .imgFooter img {
-        width: 2vw;
+        width: 6vw;
 
     }
 
@@ -1052,13 +2199,15 @@ footer a {
 
     .infoFooter {
         height: 40vh;
-        width: 30vw;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        font-size: 1.3vw;
+        font-size: 2.5vw;
     }
+
+
 
 
 
