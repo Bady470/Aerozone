@@ -147,6 +147,129 @@ header {
 }
 
 
+/* ventanas emeergente */
+
+
+
+/* ventana de incio de sesion */
+
+
+.cerrar {
+  position: absolute;
+  right: 40px;
+
+
+}
+
+.contenedor-padre {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 32vw;
+  height: 80vh;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+  background-size: cover;
+  background-position: center;
+  transition: 8s;
+}
+
+.contenedor-padre .logo-inicio {
+  width: 10vw;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+
+}
+
+.usuario img {
+  width: 5vw;
+  position: absolute;
+  margin-left: -4px;
+}
+
+.usuario input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  height: 8vh;
+  font-size: 1vw;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+}
+
+.contraseña {
+  display: flex;
+  align-items: center;
+
+}
+
+.contraseña img {
+  width: 5vw;
+  position: absolute;
+  margin-left: 20.5vw;
+}
+
+.contraseña input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+  text-align: center;
+  height: 8vh;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+}
+
+.btnIniciarsesion {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.7vw;
+  width: 25vw;
+  background-color: #1b2549;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+
+
+
+.olvido-contra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  justify-content: space-between;
+
+}
+
+.olvido-contra a {
+  text-decoration: none;
+  color: white;
+}
+
+/* termina la ventana de incio de sesion  */
+
+
+
+
 .contenedor_claro {
     position: absolute;
     top: 60%;
@@ -712,6 +835,16 @@ footer a {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* responsive del header */
 @media(max-width: 768px) {
 
@@ -1132,6 +1265,250 @@ footer a {
 
 
 }
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:768px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 65vw;
+    height: 75vh;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 17vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 9vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 2vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 9vw;
+    position: absolute;
+    margin-left: 36.5vw;
+  }
+
+  .contraseña input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 2vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 45vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:425px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 30vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 16vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 4vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 16vw;
+    position: absolute;
+    margin-left: 66vw;
+  }
+
+  .contraseña input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 4vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 4vw;
+    width: 80vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
+
+
 
 @media (max-width: 768px) {
 
