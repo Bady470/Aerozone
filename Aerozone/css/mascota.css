@@ -172,6 +172,130 @@ header {
 
 
 
+
+/* ventanas emeergente */
+
+
+
+/* ventana de incio de sesion */
+
+
+.cerrar {
+  position: absolute;
+  right: 40px;
+
+
+}
+
+.contenedor-padre {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 32vw;
+  height: 80vh;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+  background-size: cover;
+  background-position: center;
+  transition: 8s;
+}
+
+.contenedor-padre .logo-inicio {
+  width: 10vw;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+
+}
+
+.usuario img {
+  width: 5vw;
+  position: absolute;
+  margin-left: -4px;
+}
+
+.usuario input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  height: 8vh;
+  font-size: 1vw;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+}
+
+.contraseña {
+  display: flex;
+  align-items: center;
+
+}
+
+.contraseña img {
+  width: 5vw;
+  position: absolute;
+  margin-left: 20.5vw;
+}
+
+.contraseña input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+  text-align: center;
+  height: 8vh;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+}
+
+.btnIniciarsesion {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.7vw;
+  width: 25vw;
+  background-color: #1b2549;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+
+
+
+.olvido-contra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  justify-content: space-between;
+
+}
+
+.olvido-contra a {
+  text-decoration: none;
+  color: white;
+}
+
+/* termina la ventana de incio de sesion  */
+
+
+
+
 /* sesion2 la de la informacion para los usuarios */
 .sesion2 {
   display: flex;
@@ -221,12 +345,13 @@ header {
 /* sesion3 banner  */
 .banner-sesion3 {
   display: flex;
+  gap: 100px;
   width: 100%;
   justify-content: center;
 }
 
 .img-banner {
-  width: 40%;
+  width: 30%;
 }
 
 .info-banner {
@@ -275,6 +400,7 @@ header {
 
 .sesion4 img {
   width: 100%;
+  
 }
 
 
@@ -301,7 +427,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100%;
   width: 40%;
 }
 
@@ -332,7 +458,7 @@ header {
 
 .img-banner5 img {
   width: 70%;
-  height: 60vh;
+  height:100%;
   border-radius: 0;
 
 }
@@ -549,11 +675,11 @@ html {
   }
 
   .contenedor-1-sesion2 h2 {
-    font-size: 1.9vw;
+    font-size: 2vw;
   }
 
   .contenedor-1-sesion2 p {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
   }
 
 
@@ -612,6 +738,125 @@ html {
 }
 
 
+/* responsive del .inicio_sesion */
+
+@media(max-width:768px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 65vw;
+    height: 75vh;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 17vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 9vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 2vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 9vw;
+    position: absolute;
+    margin-left: 36.5vw;
+  }
+
+  .contraseña input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 2vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 45vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
 
 
 
@@ -640,14 +885,14 @@ html {
 }
 
 .info-banner h2 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: bold;
   text-align: center;
 }
 
 .info-banner .text {
   
-  font-size: 10px;
+  font-size: 25px;
   width: 100%;
 }
 
@@ -655,7 +900,7 @@ html {
 
 .items {
   width: 100%;
-  font-size: 10px;
+  font-size: 15px;
   text-align: justify;
   margin-left: 0;
 }
@@ -752,21 +997,21 @@ html {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-
+margin-top: 2.1rem;
     background-color: #1b2549;
     color: #b6b6b6;
     height: 40vh;
-    margin-top: 2.1rem;
 
   }
 
   footer a {
     color: #b6b6b6;
+    font-size: 12px;
     text-decoration: none;
   }
 
   .imgFooter img {
-    width: 2vw;
+    width: 3vw;
 
   }
 
@@ -782,7 +1027,10 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
+  }
+  .infoFooter p{
+    font-size: 12px;
   }
 
 
@@ -801,6 +1049,493 @@ html {
 
 /* movil */
 
+
+
+
+
+/* menu celular */
+
+@media(max-width: 425px) {
+
+
+  /* header */
+
+  header {
+    height: 100px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%;
+    justify-content: space-around;
+    width: 50vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: none;
+
+  }
+
+  .redes img {
+    display: none;
+
+  }
+
+  .redes .x {
+    display: none;
+
+  }
+
+
+  /* menu de hamburguesa */
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1B2549;
+    right: -100%;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 0px 0px;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+
+    display: flex;
+    border: none;
+    align-items: center;
+    background: none;
+    color: aliceblue;
+  }
+
+  .mostrar-menu {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1000;
+    top: 30px;
+    position: fixed;
+    right: 30px;
+  }
+
+  .esconder-menu {
+    z-index: 1000;
+    color: aliceblue;
+    position: absolute;
+    top: 40px;
+    right: 59px;
+  }
+
+  #check:checked~.menu {
+
+    right: 0;
+  }
+}
+/* termina responsive de la sesion del menu principal */
+
+  /* sesion2 la de la informacion para los usuarios */
+
+@media(max-width: 425px) {
+
+
+  /* sesion2 la de la informacion para los usuarios */
+  .sesion2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.1rem;
+    flex-direction: column;
+    gap:2.5rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2.1rem;
+
+  }
+
+  .contenedor-centro{
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .contenedor-1-sesion2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 0;
+    justify-content: space-between;
+    height: 75vh;
+
+  }
+
+  .contenedor-1-sesion2 h2 {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  .contenedor-1-sesion2 p {
+    font-size: 3vw;
+  }
+
+
+  .contenedor-1-sesion2 img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+  }
+
+}
+
+
+/* responisve del fondo principal */
+@media(max-width:425px) {
+
+  /* contenedor de la pagina */
+  .contenedor_principal {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.5)), url('img/fondo-mascota.webp');
+
+    background-size: cover;
+    background-image: 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .texto-del-fondo {
+    display: flex;
+    padding-top: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    color: #ffffff;
+    gap: 2rem;
+  }
+
+  .texto-del-fondo h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .texto-del-fondo p {
+    display: none;
+    font-size: 3vw;
+    text-align: center;
+  }
+
+
+}
+
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:425px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 30vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 16vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 4vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 16vw;
+    position: absolute;
+    margin-left: 66vw;
+  }
+
+  .contraseña input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 4vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 4vw;
+    width: 80vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
+
+
+
+/* responsive de los requisitos de viaje con las mascotas */
+@media(max-width:425px){
+  
+/* sesion3 banner  */
+.banner-sesion3 {
+  display: flex;
+  margin-top: 0;
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-banner {
+  width: 90%;
+  border-radius: 0%;
+}
+
+.info-banner {
+  display: flex;
+  text-align: justify;
+  width: 90%;
+  
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: center;
+}
+
+.info-banner h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-banner .text {
+  
+  font-size: 25px;
+  width: 100%;
+}
+
+
+
+.items {
+  width: 100%;
+  font-size: 13px;
+  text-align: justify;
+  margin-left: 0;
+}
+
+.img-banner img {
+  width: 100%;
+  border-top-right-radius:  10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* termina la sesion 3 */
+}
+/*termina responsive de los requisitos de viaje con las mascotas */
+
+
+
+/* responsive de la sesion   */
+
+
+@media(max-width:425px){
+/* sesion 5 banner  */
+.sesion4{
+  margin-top: 2.1rem;
+  margin-bottom: 2.1rem;
+}
+
+.sesion5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.banner-sesion5 {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.img-banner5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color:transparent;
+  width: 45%;
+}
+
+
+.info-banner5 {
+  display: flex;
+  text-align: justify;
+  width: 45%;
+  height: 40vh;
+  flex-direction: column;
+justify-content: center;
+gap: 10px;
+
+}
+
+.info-banner5 h2 {
+  font-size: 4vw;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+
+
+
+.items5 {
+  width: 100%;
+  font-size: 2.5vw;
+  text-align: justify;
+}
+
+.img-banner5 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+/* termina la sesion 5 */
+}
+
+
+
+
 /* PIE DE PAGINA */
 @media(max-width: 425px) {
 
@@ -817,6 +1552,7 @@ html {
     background-color: #1b2549;
     color: #b6b6b6;
     height: 70vh;
+    margin-top: 2.2rem;
 
   }
 
