@@ -1,134 +1,134 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-  }
+}
 
-  body {
-    background-color: #e2e2e2;
-  }
-
-
-
-  /* header */
-  header {
-    width: 100%;
-    height: 150px;
-    background-color: #1B2549;
-    color: white;
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-
-  }
-
-  .logo {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .inicio_sesion {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 25vw;
-    min-width: 150px;
-  }
-
-  .inicio_sesion #inicio,
-  .inicio_sesion #unirse {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin: 0 0.5rem;
-  }
-
-  .inicio_sesion #inicio img {
-    width: 1.8rem;
-    height: 1.8rem;
-    margin-right: 0.3rem;
-  }
-
-  .redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20vw;
-    min-width: 120px;
-  }
-
-  .redes img {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .redes .x {
-    width: 1.8rem;
-    height: 1.6rem;
-  }
+body {
+  background-color: #e2e2e2;
+}
 
 
-  .menu {
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-  }
 
-  .menu a {
+/* header */
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #1B2549;
+  color: white;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #1B2549;
-    width: 200px;
-    height: 50PX;
-    display: flex;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px #1B2549;
-    background-color: aliceblue;
-    transition: 3s;
+}
 
-  }
+.logo {
+  width: 150px;
+  height: 150px;
+}
 
-  .mostrar-menu,
-  .esconder-menu {
-    font-size: 30px;
+.inicio_sesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25vw;
+  min-width: 150px;
+}
 
-    cursor: pointer;
-    display: none;
-    transition: 0.5s;
-  }
+.inicio_sesion #inicio,
+.inicio_sesion #unirse {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
 
-  .mostrar-menu {
-    order: 1;
+.inicio_sesion #inicio img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.3rem;
+}
 
-  }
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20vw;
+  min-width: 120px;
+}
 
-  .menu a:hover,
-  .mostrar-menu:hover,
-  .esconder-menu:hover {
-    color: #6cc091;
-    text-decoration: underline;
+.redes img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.redes .x {
+  width: 1.8rem;
+  height: 1.6rem;
+}
 
 
-  }
+.menu {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+}
 
-  #check {
-    display: none;
-  }
+.menu a {
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1B2549;
+  width: 200px;
+  height: 50PX;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #1B2549;
+  background-color: aliceblue;
+  transition: 3s;
+
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+
+  cursor: pointer;
+  display: none;
+  transition: 0.5s;
+}
+
+.mostrar-menu {
+  order: 1;
+
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #6cc091;
+  text-decoration: underline;
+
+
+}
+
+#check {
+  display: none;
+}
 
 /* contenedor de la pagina */
 .contenedor_principal {
@@ -139,7 +139,7 @@
   justify-content: center;
   align-items: center;
 
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-mascota.webp');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-mascota.webp');
 
   background-size: cover;
   background-image: 100%;
@@ -148,7 +148,8 @@
   align-items: center;
 
 }
-.texto-del-fondo{
+
+.texto-del-fondo {
   display: flex;
   padding-top: 2rem;
   flex-direction: column;
@@ -160,10 +161,10 @@
 }
 
 .texto-del-fondo h1 {
-font-size: 3vw;
+  font-size: 3vw;
 }
 
-.texto-del-fondo p{
+.texto-del-fondo p {
   font-size: 1.2vw;
   text-align: center;
 }
@@ -172,34 +173,44 @@ font-size: 3vw;
 
 
 /* sesion2 la de la informacion para los usuarios */
-.sesion2{
+.sesion2 {
   display: flex;
-justify-content: center;
-margin-top: 4.2rem;
-gap: 1rem;  width: 100%;
+  justify-content: center;
+  margin-top: 4.2rem;
+  gap: 1rem;
+  width: 100%;
+
   margin-bottom: 4.2rem;
 
 }
-.contenedor-1-sesion2{
-display: flex;
-flex-direction: column;
-text-align: center;
-background-color: #e2e2e2;
+.contenedor-centro{
+  display: flex;
+  gap: 1rem;
+}
+
+.contenedor-1-sesion2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #e2e2e2;
   width: 20vw;
   justify-content: space-between;
   height: 70vh;
 
 }
 
-.contenedor-1-sesion2 h2{
+.contenedor-1-sesion2 h2 {
   font-size: 1.2vw;
+
 }
-.contenedor-1-sesion2 p{
+
+.contenedor-1-sesion2 p {
   font-size: 0.9vw;
+  text-align: justify;
 }
 
 
-.contenedor-1-sesion2 img{
+.contenedor-1-sesion2 img {
   width: 100%;
   height: 50vh;
   border-radius: 10px;
@@ -208,56 +219,61 @@ background-color: #e2e2e2;
 
 
 /* sesion3 banner  */
-.banner-sesion3{
+.banner-sesion3 {
   display: flex;
   width: 100%;
-justify-content: center;
+  justify-content: center;
 }
 
-.img-banner{
-width: 40%;
+.img-banner {
+  width: 40%;
 }
-.info-banner{
+
+.info-banner {
   display: flex;
   text-align: justify;
-width: 42%;
+  width: 42%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.info-banner h2{
+.info-banner h2 {
   font-size: 2.5vw;
   font-weight: bold;
-  
+
   text-align: center;
 }
-.info-banner .text{
-  
+
+.info-banner .text {
+
   width: 90%;
 }
 
 
 
-.items{
+.items {
   width: 100%;
   font-size: 1vw;
-text-align: justify;
-margin-left: 130px;
+  text-align: justify;
+  margin-left: 130px;
 }
-.img-banner img{
+
+.img-banner img {
   width: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 /* termina la sesion 3 */
 
-.sesion4{
+.sesion4 {
   margin-top: 4.2rem;
-width: 100%;
-margin-bottom: 4.2rem;
+  width: 100%;
+  margin-bottom: 4.2rem;
 }
-.sesion4 img{
+
+.sesion4 img {
   width: 100%;
 }
 
@@ -266,57 +282,61 @@ margin-bottom: 4.2rem;
 
 /* sesion 5 banner  */
 
-.sesion5{
+.sesion5 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.banner-sesion5{
+
+.banner-sesion5 {
   display: flex;
   width: 90%;
   height: 60vh;
   align-items: center;
-justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 
-.img-banner5{
+.img-banner5 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70vh;
-width: 40%;
+  width: 40%;
 }
-.info-banner5{
+
+.info-banner5 {
   display: flex;
   text-align: justify;
-width: 45%;
-height: 40vh;
+  width: 45%;
+  height: 40vh;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.info-banner5 h2{
+.info-banner5 h2 {
   font-size: 2.5vw;
   font-weight: bold;
-  
+
   text-align: center;
 }
 
 
 
 
-.items5{
+.items5 {
   width: 100%;
   font-size: 1vw;
-text-align: justify;
+  text-align: justify;
 }
-.img-banner5 img{
+
+.img-banner5 img {
   width: 70%;
   height: 60vh;
   border-radius: 0;
 
 }
+
 /* termina la sesion 5 */
 
 
@@ -386,7 +406,7 @@ html {
 
 
 /* table */
-
+/* responsive de la sesion del menu principal */
 @media(max-width: 768px) {
 
   /* header */
@@ -495,6 +515,233 @@ html {
   }
 }
 
+/* termina responsive de la sesion del menu principal */
+
+
+@media(max-width: 768px) {
+
+
+  /* sesion2 la de la informacion para los usuarios */
+  .sesion2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.1rem;
+    flex-direction: column;
+    gap:2.5rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 4.2rem;
+
+  }
+
+  .contenedor-centro{
+    display: flex;
+    gap: 2.1rem;
+  }
+  .contenedor-1-sesion2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-between;
+    height: 63vh;
+
+  }
+
+  .contenedor-1-sesion2 h2 {
+    font-size: 1.9vw;
+  }
+
+  .contenedor-1-sesion2 p {
+    font-size: 1.2vw;
+  }
+
+
+  .contenedor-1-sesion2 img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+  }
+
+}
+
+
+/* responisve del fondo principal */
+@media(max-width:768px) {
+
+  /* contenedor de la pagina */
+  .contenedor_principal {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.5)), url('img/fondo-mascota.webp');
+
+    background-size: cover;
+    background-image: 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .texto-del-fondo {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    color: #ffffff;
+    gap: 2rem;
+  }
+
+  .texto-del-fondo h1 {
+    font-size: 3.5vw;
+  }
+
+  .texto-del-fondo p {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+
+}
+
+
+
+
+
+/* responsive de los requisitos de viaje con las mascotas */
+@media(max-width:768px){
+  
+/* sesion3 banner  */
+.banner-sesion3 {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.img-banner {
+  width: 40%;
+}
+
+.info-banner {
+  display: flex;
+  text-align: justify;
+  width: 44%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-banner h2 {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-banner .text {
+  
+  font-size: 10px;
+  width: 100%;
+}
+
+
+
+.items {
+  width: 100%;
+  font-size: 10px;
+  text-align: justify;
+  margin-left: 0;
+}
+
+.img-banner img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* termina la sesion 3 */
+}
+/*termina responsive de los requisitos de viaje con las mascotas */
+
+
+
+/* responsive de la sesion   */
+
+
+@media(max-width:768px){
+/* sesion 5 banner  */
+.sesion4{
+  margin-top: 2.1rem;
+  margin-bottom: 2.1rem;
+}
+
+.sesion5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.banner-sesion5 {
+  display: flex;
+  width: 90%;
+  height: 45vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.img-banner5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #1b2549;
+  width: 40%;
+}
+
+
+.info-banner5 {
+  display: flex;
+  text-align: justify;
+  width: 45%;
+  height: 40vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info-banner5 h2 {
+  font-size: 3vw;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+
+
+
+.items5 {
+  width: 100%;
+  font-size: 1.9vw;
+  text-align: justify;
+}
+
+.img-banner5 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+
+}
+
+/* termina la sesion 5 */
+}
 
 /* PIE DE PAGINA */
 @media(max-width: 768px) {
@@ -509,6 +756,7 @@ html {
     background-color: #1b2549;
     color: #b6b6b6;
     height: 40vh;
+    margin-top: 2.1rem;
 
   }
 
@@ -564,8 +812,8 @@ html {
     align-items: center;
     text-align: center;
     padding: 0;
-width: 100%;
-flex-direction: column;
+    width: 100%;
+    flex-direction: column;
     background-color: #1b2549;
     color: #b6b6b6;
     height: 70vh;

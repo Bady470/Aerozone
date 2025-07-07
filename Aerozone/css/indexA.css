@@ -267,6 +267,10 @@ termina la ventana de incio de sesion .menu {
   align-items: center;
 
 }
+.dropdown{
+  display: none;
+}
+
 
 /* menu que esta en de busqueda de vuelos en la parte principal */
 .menu_mayor {
@@ -1236,6 +1240,68 @@ html {
     background: #009062;
   }
 
+
+  /* redes al costado derecho */
+
+  
+/* Estilos del contenedor */
+.dropdown {
+
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: -68.2%;
+  margin-left: 92.1%;
+}
+
+.dropdown-button {
+  border: none;
+ background-color: transparent;
+   cursor: pointer;
+   padding-top: 6px;
+   background-color: #1B2549;
+   width: 60px;
+
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  background-color: #1B2549;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-menu li img {
+  width: 40px;
+  height: 40px;
+}
+.dropdown-button :hover{
+  background-color: #1b2549;
+   width: 40px;
+  height: 40px; 
+
+}
+.dropdown-menu li:hover  {
+    padding: 10px;
+  background-color: #29376b;
+}
+
+/* Mostrar el menú cuando se haga clic */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 
 }
@@ -2606,8 +2672,27 @@ html {
   .contenedor-1 {
     width: 100%;
   }
+ .contenedor_img {
+    width: 45%;
+    height: 43vh;
 
-  .contenedor_img {
+
+  }
+  .contenedor_img1 {
+    width: 45%;
+    height: 43vh;
+
+
+  }
+  
+  .contenedor_img2 {
+    width: 45%;
+    height: 43vh;
+
+
+  }
+  
+  .contenedor_img3 {
     width: 45%;
     height: 43vh;
 
