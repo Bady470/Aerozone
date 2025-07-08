@@ -152,7 +152,7 @@
 
 .menu_mayor {
   position: absolute;
-  top: 95%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -246,7 +246,7 @@
   justify-content: space-around;
   gap: 15px;
   margin-bottom: 15px;
-  width: 40%;
+  width: 20%;
 }
 
 .formulario {
@@ -292,112 +292,123 @@
 }
 
 
-/* sesion3 vuelos populares*/
-.sesion3 {
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  height: 100%;
-}
+/* ventanas emeergente */
 
-.contenedor_sesion3 {
-  display: flex;
-  width: 90vw;
-  height: 100%;
-  border: 7px black solid;
-  border-radius: 0px;
-  position: relative;
-  /* flex-direction: column; */
-}
 
-.contenedor_bogota_cartagena {
-  display: flex;
-  flex-direction: column;
-  width: 40.5%;
-  height: 100%;
-  /* background-color: #009062; */
-  position: relative;
-  flex-direction: column;
-  gap: 12px;
-}
 
-.imgbogota {
-  width: 96%;
-  height: 100%;
+/* ventana de incio de sesion */
 
-  margin-top: 10px;
-  margin-left: 10px;
-  position: relative;
-}
 
-.imgbogota2 {
-  width: 96%;
-  height: 100%;
-  margin-left: 10px;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.imgbogota2 img {
-  width: 100%;
-  height: 100%;
-}
-
-.imgbogota img {
-  width: 100%;
-  height: 100%;
-}
-
-#relleno {
-  display: flex;
-  width: 100%;
-  height: 27%;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000067;
-
-  /* opacity: 50%; */
-  top: 72.7%;
+.cerrar {
   position: absolute;
+  right: 40px;
+
+
 }
 
-.cop {
+.contenedor-padre {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  position: fixed;
+  z-index: 1000;
+  width: 32vw;
+  height: 80vh;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+  background-size: cover;
+  background-position: center;
+  transition: 8s;
+}
+
+.contenedor-padre .logo-inicio {
+  width: 10vw;
+}
+
+.usuario {
   display: flex;
   align-items: center;
-  width: 90%;
-  height: 65%;
-  background-color: #ffffff;
-  border-radius: 15px;
-  justify-content: space-between;
+
 }
 
-.txt_cop {
+.usuario img {
+  width: 5vw;
+  position: absolute;
+  margin-left: -4px;
+}
+
+.usuario input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  height: 8vh;
+  font-size: 1vw;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+}
+
+.contraseña {
   display: flex;
-  width: 40%;
-  height: 70%;
-  margin: 12px;
-  justify-content: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
+  align-items: center;
+
 }
 
-.txt_cop p {
-  font-weight: bold;
-  color: #2a2929;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+.contraseña img {
+  width: 5vw;
+  position: absolute;
+  margin-left: 20.5vw;
 }
 
-.txtValor {
+.contraseña input {
+  width: 25vw;
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+  text-align: center;
+  height: 8vh;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+}
+
+.btnIniciarsesion {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-right: 30px;
-  font-size: 1.5rem;
+  text-decoration: none;
+  font-size: 1.7vw;
+  width: 25vw;
+  background-color: #1b2549;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  height: 8vh;
 }
 
 
+
+
+.olvido-contra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  justify-content: space-between;
+
+}
+
+.olvido-contra a {
+  text-decoration: none;
+  color: white;
+}
 .contenedor_titulomayor_ {
   margin-top: 4.1rem;
   margin-bottom: 4.1rem;
@@ -695,7 +706,7 @@ footer a {
 }
 
 
-/* responsive */
+/* responsive del menu de reservas*/ 
 @media(max-width: 768px) {
 
   .contenedor_principal {
@@ -708,7 +719,6 @@ footer a {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -776,9 +786,10 @@ footer a {
   }
 
   #busqueda {
-
+display: flex;
     background: #f6eeee;
     padding: 20px;
+    margin: 0;
     width: 90vw;
     height: 17vh;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
@@ -798,16 +809,19 @@ footer a {
     /* display: none; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 
-
+padding: 0%;
+margin: 0%;
   }
 
   .opciones {
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    align-items: center;
+    width: 30%;
+    align-items:center;
+    
+    margin-left: 15px;
   }
 
   .opciones label {
@@ -839,7 +853,7 @@ footer a {
   }
 
   .formulario .number {
-    height: 22px;
+    height: 4.5vh;
 
   }
 
@@ -853,8 +867,8 @@ footer a {
     color: white;
     border: none;
     width: 9%;
-    height: 2.4rem;
-    padding: 10px 15px;
+    height:vh;
+    padding: 0px 0px;
     font-size: 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -871,6 +885,128 @@ footer a {
 
 
 }
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:768px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 65vw;
+    height: 75vh;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 17vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 9vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 2vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 9vw;
+    position: absolute;
+    margin-left: 36.5vw;
+  }
+
+  .contraseña input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 2vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 45vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
 
 
 
@@ -1120,46 +1256,697 @@ footer a {
 
 
 
+
 /* PIE DE PAGINA */
-@media(max-width: 768px){
+@media(max-width: 768px) {
+
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 40vh;
+
+  }
+
+  footer a {
+    color: #b6b6b6;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .imgFooter img {
+    width: 3vw;
+
+  }
+
+  .imgFooter {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .infoFooter {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vw;
+  }
+  .infoFooter p{
+    font-size: 12px;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+/* responsive para movil */
+
+
+/* menu celular */
+
+@media(max-width: 425px) {
+
+
+  /* header */
+
+  header {
+    height: 100px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inicio_sesion {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%;
+    justify-content: space-around;
+    width: 50vw;
+    min-width: 150px;
+  }
+
+  .inicio_sesion #inicio,
+  .inicio_sesion #unirse {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+  }
+
+  .inicio_sesion #inicio img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.3rem;
+  }
+
+  .redes {
+    display: none;
+
+  }
+
+  .redes img {
+    display: none;
+
+  }
+
+  .redes .x {
+    display: none;
+
+  }
+
+
+  /* menu de hamburguesa */
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1B2549;
+    right: -100%;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 0px 0px;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+
+    display: flex;
+    border: none;
+    align-items: center;
+    background: none;
+    color: aliceblue;
+  }
+
+  .mostrar-menu {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1000;
+    top: 30px;
+    position: fixed;
+    right: 30px;
+  }
+
+  .esconder-menu {
+    z-index: 1000;
+    color: aliceblue;
+    position: absolute;
+    top: 40px;
+    right: 59px;
+  }
+
+  #check:checked~.menu {
+
+    right: 0;
+  }
+}
+/* menu de reserva de vuelos */
+@media(max-width: 425px) {
+
+  .contenedor_principal {
+    height: 30vh;
+    /* background-image: url(); */
+  }
+
+  /* menu que esta en de busqueda de vuelos en la parte principal */
+  .menu_mayor {
+    display: none;
+    position: absolute;
+    top: 59vh;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu1 {
+    display: none;
+    align-items: center;
+    width: 100%;
+
+    height: 24vh;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+    border: 0;
+    background-color: transparent;
+    border-top-right-radius: 10px;
+    
+    border-top-left-radius: 10px;
+  }
+
+  .items_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .items_todos a {
+    text-decoration: none;
+    color: black;
+    background-color: #009062;
+
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+
+    font-size: 4vw;
+    animation: ease-in;
+    border-bottom: 3px solid transparent;
+  }
+
+  .items img {
+    width: 10%;
+    height: 10%;
+  }
+
+  .items.active:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+  }
+
+  .items:hover {
+    border-bottom: 2.4px solid rgb(0, 0, 0);
+    /* font-weight: 680; */
+    transition: 0.5s;
+
+  }
+
+  .items:not(hover) {
+    transition: 1s;
+  }
+
+  #busqueda {
+    display: flex;
+    background: #000000b1;
+    width: 70%;
+    justify-content: space-evenly;
+    height: 68vh;
+    box-shadow: 0;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border: 0;
+    border-radius: 10px;
+  }
+
+  .busquedas.active {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 104%;
+    flex-direction: column;
+  }
+
+  .busquedas {
+    /* display: none; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+
+
+  }
+
+  .opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .opciones label {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+
+    font-size: 1rem;
+
+  }
+
+  .ciudades {
+    width: 75px;
+  }
+
+  .opciones select {
+    padding: 0px;
+    width: 100%;
+    display: none;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    height: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formulario input {
+    padding: 0;
+
+    width: 100%;
+    border: 2px black solid;
+    height: 2rem;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+
+  .formulario .number {
+    height: 50px;
+
+  }
+
+  .formulario .date {
+    height: 7vh;
+    width: 100%;
+  }
+
+  .buscar {
+    background: #1b2549;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 3.3rem;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buscar:hover {
+    background: #009062;
+  }
+
+
+
+}
+
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:425px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 30vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 16vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 4vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 16vw;
+    position: absolute;
+    margin-left: 66vw;
+  }
+
+  .contraseña input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 4vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 4vw;
+    width: 80vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
+
+@media(max-width:425px){
   
-
-footer {
+.contenedor_titulomayor_ {
+  margin-top: 25rem;
+  margin-bottom: 2.1rem;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  
-  background-color: #1b2549;
-  color: #b6b6b6;
-  height: 40vh;
-
-}
-
-footer a {
-  color: #b6b6b6;
-  text-decoration: none;
-}
-
-.imgFooter img {
-  width: 2vw;
-
-}
-
-.imgFooter {
-  display: flex;
+  flex-direction: column;
   gap: 1rem;
+
+  align-items: center;
+
+
+
 }
 
-.infoFooter {
-  height: 40vh;
-  width: 30vw;
+.contenedor_titulomayor_ P {
+  font-size: 1.4rem;
+  color: #1b2549;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+.vuelos_center {
+  /* en este div nos encargamos de centrar los el contenedor de hoteles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2.1rem;
+
+
+}
+
+.vuelos {
+  /* en este div centramos los hoteles */
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 2.1rem;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+.vuelo_sesion3 {
+  /* en este div creamos el contenedor de los hoteles */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90vw;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.img_vuelos {
+  /* en este div creamos el contenedor de la imagen del hotel */
+  width: 100%;
+  height: 45vw;
+  overflow: hidden;
+}
+
+.img_vuelos img {
+  /* en esta sesion nos encargamos de que la imagen del hotel ocupe todo el espacio disponible */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotel_contenido {
+  /* en este apartado creamos el contenedor de la informacion del hotel */
+  display: flex;
+  width: 100%;
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.calificacion_de_vuelo {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  font-size: 1.3vw;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 3.9vw;
+  color: #1b2549;
+  padding-left: 10px;
+  font-weight: bold;
 }
+
+.precios_decripcion {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.precio_desde {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0;
+  color: #000;
+}
+
+.por-dia {
+  gap: 12px;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+
+#precio_btn {
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end
+}
+
+.btn_ver_mas {
+  background-color: #0d1b4c;
+  color: white;
+  width: 39vw;
+  height: 5vh;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+.btn_ver_mas:hover {
+  background-color: #1f3382;
+}
+
+}
+
+/* PIE DE PAGINA */
+@media(max-width: 425px) {
+
+  footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+width: 100%;
+flex-direction: column;
+    background-color: #1b2549;
+    color: #b6b6b6;
+    height: 70vh;
+
+  }
+
+  footer a {
+    color: #b6b6b6;
+    text-decoration: none;
+  }
+
+  .imgFooter img {
+    width: 6vw;
+
+  }
+
+  .imgFooter {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .infoFooter {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5vw;
+  }
+
+
 
 
 
