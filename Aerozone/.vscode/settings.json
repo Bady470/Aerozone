@@ -1,0 +1,7 @@
+{
+    "github.copilot.enable": {
+        "css": true,
+        "php": true,
+        "html": true
+    }
+}

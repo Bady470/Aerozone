@@ -128,14 +128,89 @@
         
     </div> -->
 
-<div class="dropdown">
+<!-- <div class="dropdown">
   <button class="dropdown-button"><img src="img/facebook.png" alt="Facebook" width="40px"></button>
   <ul class="dropdown-menu">
     <li><img src="img/youtube.png" alt="YouTube"></li>
     <li><img src="img/instagram.png" alt="Instagram"></li>
     <li><img src="img/x (1).png" alt="Otra"></li>
   </ul>
-</div>
+</div> -->
+
+
+        <!-- ventana emergente de registro -->
+        <div class="contenedor-padre" id="ventanaRegistro" style="">
+            <a id="cerrarRegistro" href="#"><img class="cerrar" src="img/x-sesion.svg" alt=""></a>
+            <img class="logo-inicio" src="img/logo empresa 2.svg" alt="">
+            <div class="usuario">
+            <img src="img/muñeco-inicio.svg" alt="">
+            <input type="text" placeholder="Ingrese su usuario">
+            </div>
+            <div class="correo">
+            <img src="img/correo.svg" alt="">
+            <input type="email" placeholder="Ingrese su correo">
+            </div>
+            <div class="contraseña">
+            <img src="img/candado-sesion.svg" alt="">
+            <input type="password" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="contraseña">
+            <img src="img/candado-sesion.svg" alt="">
+            <input type="password" placeholder="Repita su contraseña">
+            </div>
+            <a id="registrarBtn" class="btnIniciarsesion" href="#">Registrarse</a>
+            <div class="olvido-contra">
+            <a href="#" id="irInicioSesion">¿Ya tienes cuenta? Iniciar sesión</a>
+            </div>
+        </div>
+
+        <style>
+        /* Ventana emergente de registro (igual a inicio de sesión) */
+        
+        @media (max-width: 600px) {
+            #ventanaRegistro .logo-inicio { width: 80px; }
+            #ventanaRegistro input[type="text"],
+            #ventanaRegistro input[type="email"],
+            #ventanaRegistro input[type="password"] { width: 120px; }
+        }
+        </style>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let unirse = document.getElementById("unirse");
+            let ventanaRegistro = document.getElementById("ventanaRegistro");
+            let cerrarRegistro = document.getElementById("cerrarRegistro");
+            let ventanaInicio = document.getElementById("ventanaInicio");
+            let irInicioSesion = document.getElementById("irInicioSesion");
+
+            if (unirse && ventanaRegistro && cerrarRegistro) {
+            unirse.addEventListener("click", function (e) {
+                e.preventDefault();
+                ventanaRegistro.style.display = "flex";
+                if (ventanaInicio) ventanaInicio.style.display = "none";
+                document.body.style.overflow = "hidden";
+            });
+
+            cerrarRegistro.addEventListener("click", function (e) {
+                e.preventDefault();
+                ventanaRegistro.style.display = "none";
+                document.body.style.overflow = "";
+            });
+            }
+
+            if (irInicioSesion && ventanaInicio && ventanaRegistro) {
+            irInicioSesion.addEventListener("click", function(e) {
+                e.preventDefault();
+                ventanaRegistro.style.display = "none";
+                ventanaInicio.style.display = "flex";
+            });
+            }
+        });
+        </script>
+
+
+
+
 
     <!-- <div class="contenedor_img">
         <div class="contenedor_sombra">

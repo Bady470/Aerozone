@@ -12,7 +12,8 @@
     <header>
         <img src="img/logo de la empresa.png" alt="" class="logo">
         <div class="inicio_sesion">
-            <a id="inicio" href="" ><img id="inicio" src="img/PERSONA.png" alt="icon" width="48vw" height="48vh">INICIAR SESION</a>
+            <a id="inicio" href=""><img id="inicio" src="img/PERSONA.png" alt="icon" width="48vw" height="48vh">INICIAR
+                SESION</a>
             <a id="unirse" href="">UNIRSE</a>
         </div>
 
@@ -28,15 +29,15 @@
         <input type="checkbox" id="check">
 
 
-        
-<div class="dropdown">
-  <button class="dropdown-button"><img src="img/facebook.png" alt="Facebook" width="40px"></button>
-  <ul class="dropdown-menu">
-    <li><img src="img/youtube.png" alt="YouTube"></li>
-    <li><img src="img/instagram.png" alt="Instagram"></li>
-    <li><img src="img/x (1).png" alt="Otra"></li>
-  </ul>
-</div>
+
+        <div class="dropdown">
+            <button class="dropdown-button"><img src="img/facebook.png" alt="Facebook" width="40px"></button>
+            <ul class="dropdown-menu">
+                <li><img src="img/youtube.png" alt="YouTube"></li>
+                <li><img src="img/instagram.png" alt="Instagram"></li>
+                <li><img src="img/x (1).png" alt="Otra"></li>
+            </ul>
+        </div>
 
 
 
@@ -47,12 +48,11 @@
         </label>
 
         <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Reservas</a>
+            <a href="indexA.html">Inicio</a>
+            <a href="reservas.html">Reservas</a>
             <a href="#">Ranking</a>
             <a href="#">Servicios</a>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
+            <a href="quienes_somos.html">Nosotros</a>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
@@ -85,7 +85,6 @@
                     <div class="opciones">
                         <label><input type="radio" name="opcion-vuelo" checked>Ida y vuelta</label>
                         <label><input type="radio" name="opcion-vuelo">Solo ida</label>
-                        <label><input type="radio" name="opcion-vuelo">Varias ciudades</label>
                         <select name="tipo" id="personal">
                             <option value="turista">Turista</option>
                             <option value="">Ejecutivo</option>
@@ -113,27 +112,27 @@
 
 
         <!-- ventana emergente del incio de sesion -->
-       
 
-            <div class="contenedor-padre" id="ventanaInicio">
-                <a id="cerrar" href=""><img class="cerrar" src="img/x-sesion.svg" alt=""></a>
-                <img class="logo-inicio" src="img/logo empresa 2.svg" alt="">
-                <div class="usuario"><img src="img/muñeco-inicio.svg" alt=""><input type="text"
-                        placeholder="ingrese su usuario"></div>
-                <div class="contraseña"><img src="img/candado-sesion.svg" alt=""><input type="password"
-                        placeholder="ingrese su contraseña"></div>
 
-                <a class="btnIniciarsesion" href="">Iniciar sesion</a>
-                <div class="olvido-contra">
-                    <a href="">Olvidastes tu contraseña?</a>
-                    <a href="">Registrarse</a>
+        <div class="contenedor-padre" id="ventanaInicio">
+            <a id="cerrar" href=""><img class="cerrar" src="img/x-sesion.svg" alt=""></a>
+            <img class="logo-inicio" src="img/logo empresa 2.svg" alt="">
+            <div class="usuario"><img src="img/muñeco-inicio.svg" alt=""><input type="text"
+                    placeholder="ingrese su usuario"></div>
+            <div class="contraseña"><img src="img/candado-sesion.svg" alt=""><input type="password"
+                    placeholder="ingrese su contraseña"></div>
 
-                </div>
-
+            <a id="inicio" class="btnIniciarsesion" href="">Iniciar sesion</a>
+            <div class="olvido-contra">
+                <a href="">Olvidastes tu contraseña?</a>
+                <a href="">Registrarse</a>
 
             </div>
 
-     
+
+        </div>
+
+
         <!-- termina la ventana emergente -->
 
 
@@ -378,6 +377,7 @@
 
 
 
+
     <!-- sesion de los destinos mas vistados(rabking) -->
     <div class="sesion4">
 
@@ -489,10 +489,29 @@
 
     </div>
 
+
+
+    <!-- sesion de las mascotas -->
+    <div class="sesion6-2">
+        <img src="img/mascotas_en_cabina.jpg" alt="">
+
+        <div class="texto_boton-2">
+            <h1>¡Viajá con tu mejor amigo!</h1>
+            <p>En nuestra aerolínea, las mascotas también son parte <br>de tu aventura.
+                Consultá nuestras políticas y viajá<br> sin preocupaciones.</p>
+            <a href="mascotas.html" type="button"  class="btn_infor-2">Mas informacion</a>
+
+
+        </div>
+
+
+
+
+    </div>
     <!-- pie de pagina -->
     <footer>
         <div class="infoFooter" id="infoFooter">
-            <h1 >Aerolinea Aerozone</h1>
+            <h1>Aerolinea Aerozone</h1>
             <p>Llevandote a tu destino con comodidad y confianza</p>
             <p>Descubre el mundo con nosotros.</p>
         </div>
@@ -520,34 +539,37 @@
     </footer>
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-        // Obtener los elementos
-        let iniciar = document.getElementById("inicio");
-        let ventanaInicio = document.getElementById("ventanaInicio");
-        let cerrar = document.getElementById("cerrar");
+            // Obtener los elementos
+            let iniciar = document.getElementById("inicio");
+            let ventanaInicio = document.getElementById("ventanaInicio");
+            let cerrar = document.getElementById("cerrar");
 
-let body =document.getElementById("Body");
+            let body = document.getElementById("Body");
 
-        // Agregar eventos si los elementos existen
-        if (iniciar && ventanaInicio && cerrar) {
-            iniciar.addEventListener("click", function (e) {
-                e.preventDefault(); // Evitar comportamiento predeterminado del enlace
-                console.log("Botón de inicio clickeado.");
-                ventanaInicio.style.display = "flex"; // Mostrar la ventana
-                document.body.style.overflow="hidden";
+            // Agregar eventos si los elementos existen
+            if (iniciar && ventanaInicio && cerrar) {
+                iniciar.addEventListener("click", function (e) {
+                    e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+                    console.log("Botón de inicio clickeado.");
+                    ventanaInicio.style.display = "flex"; // Mostrar la ventana
+                    document.body.style.overflow = "hidden";
 
-            });
-            cerrar.addEventListener("click", function (e) {
-                e.preventDefault(); // Evitar comportamiento predeterminado del enlace
-                console.log("Botón de cerrar clickeado.");
-                ventanaInicio.style.display = "none"; // Ocultar la ventana
-                document.body.style.overflow="";
-            });
-        }
-    });
-</script>
+
+                });
+
+
+                cerrar.addEventListener("click", function (e) {
+                    e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+                    console.log("Botón de cerrar clickeado.");
+                    ventanaInicio.style.display = "none"; // Ocultar la ventana
+                    document.body.style.overflow = "";
+                });
+            }
+        });
+    </script>
 
 
 </body>

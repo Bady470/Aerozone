@@ -197,7 +197,11 @@ header {
   color: white;
 }
 
-termina la ventana de incio de sesion .menu {
+/* termina la ventana de incio de sesion  */
+
+
+
+.menu {
   display: flex;
   width: 90%;
   justify-content: space-evenly;
@@ -267,7 +271,8 @@ termina la ventana de incio de sesion .menu {
   align-items: center;
 
 }
-.dropdown{
+
+.dropdown {
   display: none;
 }
 
@@ -275,7 +280,7 @@ termina la ventana de incio de sesion .menu {
 /* menu que esta en de busqueda de vuelos en la parte principal */
 .menu_mayor {
   position: absolute;
-  top: 95%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -427,7 +432,7 @@ termina la ventana de incio de sesion .menu {
   display: flex;
   width: 90vw;
   height: 100%;
-  border: 7px black solid;
+  border: 7px #1B2549 solid;
   border-radius: 0px;
   position: relative;
   /* flex-direction: column; */
@@ -1069,8 +1074,8 @@ html {
 
     right: 0;
   }
- 
-  
+
+
 }
 
 
@@ -1243,65 +1248,67 @@ html {
 
   /* redes al costado derecho */
 
-  
-/* Estilos del contenedor */
-.dropdown {
 
-  position: relative;
-  display: inline-block;
-  border-radius: 10px;
-  margin-top: -68.2%;
-  margin-left: 92.1%;
-}
+  /* Estilos del contenedor */
+  .dropdown {
 
-.dropdown-button {
-  border: none;
- background-color: transparent;
-   cursor: pointer;
-   padding-top: 6px;
-   background-color: #1B2549;
-   width: 60px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: -68.2%;
+    margin-left: 92.1%;
+  }
 
-}
+  .dropdown-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 6px;
+    background-color: #1B2549;
+    width: 60px;
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
+  }
 
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 60px;
-}
+  .dropdown-menu {
+    display: none;
+    position: absolute;
 
-.dropdown-menu li {
-  padding: 10px;
-  background-color: #1B2549;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+  }
 
-.dropdown-menu li img {
-  width: 40px;
-  height: 40px;
-}
-.dropdown-button :hover{
-  background-color: #1b2549;
-   width: 40px;
-  height: 40px; 
-
-}
-.dropdown-menu li:hover  {
+  .dropdown-menu li {
     padding: 10px;
-  background-color: #29376b;
-}
+    background-color: #1B2549;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-/* Mostrar el menú cuando se haga clic */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+  .dropdown-menu li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dropdown-button :hover {
+    background-color: #1b2549;
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .dropdown-menu li:hover {
+    padding: 10px;
+    background-color: #29376b;
+  }
+
+  /* Mostrar el menú cuando se haga clic */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 
 }
@@ -1394,7 +1401,7 @@ html {
 
 }
 
-@media(max-width: 768px) {}
+
 
 * {
   margin: 0;
@@ -1553,8 +1560,8 @@ header {
 .menu_mayor {
   position: absolute;
 
-margin-top: 0; 
- left: 50%;
+  margin-top: 0;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
@@ -1833,6 +1840,7 @@ margin-top: 0;
   align-items: end;
 
 }
+
 .contenedor_img1 {
   display: flex;
   width: 25%;
@@ -1843,6 +1851,7 @@ margin-top: 0;
   align-items: end;
 
 }
+
 .contenedor_img2 {
   display: flex;
   width: 25%;
@@ -1853,6 +1862,7 @@ margin-top: 0;
   align-items: end;
 
 }
+
 .contenedor_img3 {
   display: flex;
   width: 25%;
@@ -2328,6 +2338,74 @@ margin-top: 0;
   background: #ecf0ff;
 }
 
+
+
+/* sesio 6 la de las  informacion de la mascota */
+.sesion6-2 {
+
+  display: none;
+  margin-top: 30px;
+  width: 100%;
+  height: 635px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.sesion6-2 img {
+  width: 100%;
+  height: auto;
+
+}
+
+.texto_boton-2 {
+  display: flex;
+  width: 65%;
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #b1393900;
+  align-items: center;
+  position: absolute;
+}
+
+.texto_boton-2 h1 {
+  color: #1b2549;
+  font-size: 4vw;
+
+}
+
+.texto_boton-2 p {
+  text-align: center;
+  color: #2a2929;
+  font-size: 3vw;
+
+}
+
+.btn_infor-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  width: 50%;
+  height: 15%;
+  border-radius: 15px;
+  border: #1b2549 solid 2px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.btn_infor-2:hover {
+  background: #ecf0ff;
+}
+
+
+
+
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -2372,7 +2450,7 @@ html {
 
 
 
-
+/* header  */
 @media(max-width: 768px) {
 
   /* header */
@@ -2482,7 +2560,9 @@ html {
 }
 
 
-/* responsive */
+
+
+/* responsive menu */
 @media(max-width: 768px) {
 
   /* menu que esta en de busqueda de vuelos en la parte principal */
@@ -2495,7 +2575,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  } 
+  }
 
   .menu1 {
     display: flex;
@@ -2651,6 +2731,8 @@ html {
 
 }
 
+
+
 /* responsive sesion3 */
 @media(max-width: 768px) {
   .sesion3 {
@@ -2672,26 +2754,28 @@ html {
   .contenedor-1 {
     width: 100%;
   }
- .contenedor_img {
+
+  .contenedor_img {
     width: 45%;
     height: 43vh;
 
 
   }
+
   .contenedor_img1 {
     width: 45%;
     height: 43vh;
 
 
   }
-  
+
   .contenedor_img2 {
     width: 45%;
     height: 43vh;
 
 
   }
-  
+
   .contenedor_img3 {
     width: 45%;
     height: 43vh;
@@ -2717,6 +2801,133 @@ html {
 }
 
 /* termina el responsive de la sesion3 cabe aclarar que en el css hice dos sesiones 3 la del responsive es la ultima */
+
+
+
+
+/* responsive del .inicio_sesion */
+
+@media(max-width:768px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    position: fixed;
+    z-index: 1000;
+    width: 65vw;
+    height: 75vh;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 17vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 9vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 2vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 9vw;
+    position: absolute;
+    margin-left: 36.5vw;
+  }
+
+  .contraseña input {
+    width: 45vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 2vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 45vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
+
+
 
 
 
@@ -2810,6 +3021,10 @@ html {
 }
 
 
+
+
+
+
 /* rsponsive de la sesion 5 la de los servicios y paquetes */
 @media(max-width: 768px) {
 
@@ -2880,6 +3095,8 @@ html {
 
 }
 
+
+
 /* responsive de la sesion 6 de la mascota */
 @media (max-width:768px) {
 
@@ -2947,6 +3164,8 @@ html {
 /* termina el responsive de la sesion6 */
 
 
+
+
 /* PIE DE PAGINA */
 @media(max-width: 768px) {
 
@@ -2965,11 +3184,12 @@ html {
 
   footer a {
     color: #b6b6b6;
+    font-size: 12px;
     text-decoration: none;
   }
 
   .imgFooter img {
-    width: 2vw;
+    width: 3vw;
 
   }
 
@@ -2985,13 +3205,18 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
+  }
+  .infoFooter p{
+    font-size: 12px;
   }
 
 
 
 
 }
+
+
 
 
 
@@ -3006,9 +3231,10 @@ html {
 
   /* header */
 
-header{
-  height: 100px;
-}
+  header {
+    height: 100px;
+  }
+
   .logo {
     width: 100px;
     height: 100px;
@@ -3116,10 +3342,11 @@ header{
 /* menu de reserva de vuelos */
 @media(max-width: 425px) {
 
-  .contenedor_principal{
-  height: 30vh;
-  background: none;
+  .contenedor_principal {
+    height: 30vh;
+    /* background-image: url(); */
   }
+
   /* menu que esta en de busqueda de vuelos en la parte principal */
   .menu_mayor {
     display: none;
@@ -3132,17 +3359,18 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  } 
+  }
 
   .menu1 {
     display: none;
     align-items: center;
     width: 100%;
+
     height: 24vh;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     gap: 2rem;
-    border:0;
-    background-color:transparent;
+    border: 0;
+    background-color: transparent;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -3159,7 +3387,7 @@ header{
   .items_todos a {
     text-decoration: none;
     color: black;
-    background-color: #009062 ;
+    background-color: #009062;
 
   }
 
@@ -3197,11 +3425,11 @@ header{
   }
 
   #busqueda {
-display: flex;
-    background: #f6eeee;
-    width:90%;
-    justify-content: space-evenly ;
-    height: 85vh;
+    display: flex;
+    background: #000000b1;
+    width: 70%;
+    justify-content: space-evenly;
+    height: 68vh;
     box-shadow: 0;
     border-bottom: 2px black solid;
     border-left: 2px black solid;
@@ -3213,7 +3441,8 @@ display: flex;
     display: flex;
     padding: 0;
     margin: 0;
-    width: 100%;height: 100%;
+    width: 100%;
+    height: 104%;
     flex-direction: column;
   }
 
@@ -3230,14 +3459,20 @@ display: flex;
   .opciones {
     display: flex;
     justify-content: space-between;
-  align-items: flex-start;
+    align-items: flex-start;
     width: 100%;
   }
 
   .opciones label {
-    color: black;
-    text-align: left;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+
     font-size: 1rem;
+
+  }
+
+  .ciudades {
+    width: 75px;
   }
 
   .opciones select {
@@ -3249,20 +3484,22 @@ display: flex;
   .formulario {
     display: flex;
     align-items: center;
+    padding-right: 5px;
     height: 80%;
-    
     flex-wrap: wrap;
     flex-direction: column;
-     width: 100%;
+    width: 100%;
   }
 
   .formulario input {
-padding: 0;
+    padding: 0;
+
     width: 100%;
     border: 2px black solid;
     height: 2rem;
-    font-size: 15px;  
+    font-size: 15px;
     border-radius: 5px;
+    padding-left: 5px;
   }
 
   .formulario .number {
@@ -3295,6 +3532,128 @@ padding: 0;
 
 }
 
+/* responsive del .inicio_sesion */
+
+@media(max-width:425px) {
+
+  .cerrar {
+    position: absolute;
+    right: 30px;
+
+  }
+
+  .contenedor-padre {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo-inicio-sesion\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+    transition: 6s;
+  }
+
+  .contenedor-padre .logo-inicio {
+    width: 30vw;
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .usuario img {
+    width: 16vw;
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .usuario input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    height: 8vh;
+    font-size: 4vw;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .contraseña {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contraseña img {
+    width: 16vw;
+    position: absolute;
+    margin-left: 66vw;
+  }
+
+  .contraseña input {
+    width: 80vw;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    border: none;
+    font-size: 4vw;
+    text-align: center;
+    height: 8vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .btnIniciarsesion {
+    display: flex;
+    text-decoration: none;
+    font-size: 4vw;
+    width: 80vw;
+    background-color: #1b2549;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    height: 8vh;
+  }
+
+
+
+
+  .olvido-contra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-between;
+
+  }
+
+  .olvido-contra a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* termina la ventana de incio de sesion  */
+
+}
+
+/* termina el responsive del .inicio_sesion */
+
+
+
 
 /* responsive sesion3 */
 @media(max-width: 425px) {
@@ -3304,7 +3663,7 @@ padding: 0;
 
   .sesion-3 {
     display: block;
-    margin-top: 30rem;
+    margin-top: 25rem;
     width: 100%;
     background-color: #e2e2e2;
     display: flex;
@@ -3327,12 +3686,13 @@ padding: 0;
 
   }
 
-    .contenedor_img1 {
+  .contenedor_img1 {
     width: 90%;
     height: 43vh;
 
 
   }
+
   .contenedor_img2 {
     width: 90%;
     height: 43vh;
@@ -3340,7 +3700,7 @@ padding: 0;
 
   }
 
-    .contenedor_img3 {
+  .contenedor_img3 {
     width: 90%;
     height: 43vh;
 
@@ -3367,6 +3727,8 @@ padding: 0;
 }
 
 /* termina el responsive de la sesion3 cabe aclarar que en el css hice dos sesiones 3 la del responsive es la ultima */
+
+
 
 
 /* responsive de movil para rankink */
@@ -3430,7 +3792,7 @@ padding: 0;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
-    margin-top:56%;
+    margin-top: 56%;
   }
 
   .num_ranking h2 {
@@ -3471,7 +3833,7 @@ padding: 0;
   .sesion5 {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -3537,75 +3899,64 @@ padding: 0;
 }
 
 
-
-/* responsive de la sesion 6 de la mascota celular */
-@media (max-width:425px) {
-  
-
-  /* sesio 6 la de las  informacion de la mascota */
-  .sesion6 {
+/* Responsive para la sección de mascota (sesion6 y sesion6-2) solo para 425px */
+@media (max-width: 425px) {
+  .sesion6{
+display: none;
+  }
+  .sesion6-2 {
     display: flex;
     width: 100%;
-    height: 30vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    align-items: center;
-
-
-  }
-
-  .sesion6 img {
-    width: 100vw;
-    
-    height: auto;
-
-  }
-
-  .texto_boton {
-    display: flex;
-    width:100%;
-    margin: 0;
-    height: 60%;
     flex-direction: column;
-    gap: 10px;
-    justify-content: space-evenly;
-    background-image: none;
-    align-items: start;
-  }
-
-  .texto_boton h1 {
-    color: #1b2549;
-    font-size: 4vw;
-    margin-left: 10px;
-
-  }
-
-  .texto_boton p {
-    text-align: center;
-    color: #2a2929;
-    margin-left: 20px;
-    font-size: 2vw;
-
-  }
-
-  .btn_infor {
-    display: flex;
-    justify-content: space-evenly;
+    height: auto;
+    min-height: 30vh;
+    padding: 10px 0;
     align-items: center;
-    margin-left: 55px;
-    font-size: 13px;
-    width: 35%;
-    height:40px;
-    border-radius: 15px;
-    border: #1b2549 solid 2px;
-    cursor: pointer;
-    background: #ffffff;
+    justify-content: flex-start;
   }
-
-  .btn_infor:hover {
-    background: #ecf0ff;
+  .sesion6 img,
+  .sesion6-2 img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .texto_boton,
+  .texto_boton-2 {
+    position: static;
+    width: 96vw;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto 0 auto;
+    padding: 5px 0;
+    background: none;
+    align-items: center;
+    text-align: center;
+  }
+  .texto_boton h1,
+  .texto_boton-2 h1 {
+    font-size: 7vw;
+    margin-bottom: 8px;
+  }
+  .texto_boton p,
+  .texto_boton-2 p {
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+  .btn_infor,
+  .btn_infor-2 {
+    width: 90vw;
+    max-width: 320px;
+    height: 60px;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+
 
 /* termina el responsive de la sesion6 */
 
@@ -3620,11 +3971,12 @@ padding: 0;
     align-items: center;
     text-align: center;
     padding: 0;
-width: 100%;
-flex-direction: column;
+    width: 100%;
+    flex-direction: column;
     background-color: #1b2549;
     color: #b6b6b6;
     height: 70vh;
+    margin-top: 2.1rem;
 
   }
 
