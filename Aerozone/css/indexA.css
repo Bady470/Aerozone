@@ -3682,6 +3682,7 @@ html {
   .contenedor_img {
     width: 90%;
     height: 43vh;
+    border-radius: 10px;
 
 
   }
@@ -3689,21 +3690,21 @@ html {
   .contenedor_img1 {
     width: 90%;
     height: 43vh;
-
+   border-radius: 10px;
 
   }
 
   .contenedor_img2 {
     width: 90%;
     height: 43vh;
-
+   border-radius: 10px;
 
   }
 
   .contenedor_img3 {
     width: 90%;
     height: 43vh;
-
+   border-radius: 10px;
 
   }
 
@@ -3711,6 +3712,8 @@ html {
 
   .contenedor_sombra {
     height: 14vh;
+    border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
   }
 
   .contenido_izq h1 {
