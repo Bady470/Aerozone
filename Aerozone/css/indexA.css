@@ -432,7 +432,7 @@ header {
   display: flex;
   width: 90vw;
   height: 100%;
-  border: 7px #1B2549 solid;
+  border: 3px #1B2549 solid;
   border-radius: 0px;
   position: relative;
   /* flex-direction: column; */
@@ -1712,7 +1712,7 @@ header {
   display: flex;
   width: 90vw;
   height: 100%;
-  border: 7px black solid;
+  border: 7px #1B2549 solid;
   border-radius: 0px;
   position: relative;
   /* flex-direction: column; */
@@ -1951,7 +1951,7 @@ header {
   background-color: #e2e2e2;
   justify-content: space-evenly;
   background-color: cfcfcf;
-  border: black solid 7px;
+  border:#1B2549 solid 7px;
   margin-left: 40.5%;
   top: -6px;
   border-top: none;
